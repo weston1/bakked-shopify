@@ -3,11 +3,13 @@ div.Cart--table {
   border-collapse: collapse;
   border-spacing: 10px;
   padding-bottom: 20px;
+  font-size: 18px;
+  font-family: var(--font-primary);
 }
 
-div.Cart--row { 
-    display:table-row; 
-    border-bottom: 1px solid black;
+div.Cart--row {
+  display: table-row;
+  border-bottom: 1px solid black;
 }
 
 div.Cart--cell {
@@ -18,10 +20,18 @@ div.Cart--cell {
 }
 
 span.Cart--Thumbnail {
-    vertical-align: middle;
+  vertical-align: middle;
 }
 
 button.Cart--Checkout {
-    float: right;
-    margin: 10px;
+  float: right;
+  margin: 10px;
+}
+
+.Cart--Subtotal {
+  font-size: 21px;
+}
+
+.Cart--Product--Image {
+  border-radius: 10px;
 }

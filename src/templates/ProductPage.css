@@ -1,9 +1,9 @@
 .SingleService {
-  background: var(--lightGrey);
+  background: white;
 }
 
 .SingleService .gatsby-image-wrapper {
-    margin: 1em 1em 1em 1em;
+  margin: 1em 1em 1em 1em;
 }
 
 .SingleService--BackButton {
@@ -46,6 +46,10 @@
 
 .SingleService--Meta > * + * {
   margin-left: 0.75em;
+}
+
+.SingleService--Image {
+  border-radius: 12px;
 }
 
 .SingleService--Title {

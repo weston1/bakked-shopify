@@ -9,16 +9,7 @@ import Layout from '../components/Layout'
 import './ContactPage.css'
 
 // Export Template for use in CMS preview
-export const FormPageTemplate = ({
-  body,
-  title,
-  subtitle,
-  featuredImage,
-  address,
-  phone,
-  email,
-  locations,
-}) => (
+export const FormPageTemplate = ({ body, title, subtitle, featuredImage }) => (
   <main className="Contact">
     <PageHeader
       title={title}
@@ -59,14 +50,6 @@ export const pageQuery = graphql`
         template
         subtitle
         featuredImage
-        address
-        phone
-        email
-        locations {
-          mapLink
-          lat
-          lng
-        }
       }
     }
   }

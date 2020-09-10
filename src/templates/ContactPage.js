@@ -1,24 +1,18 @@
 import React from 'react'
-import { MapPin, Smartphone, Mail } from 'react-feather'
 import { graphql } from 'gatsby'
 
-import PageHeader from '../components/PageHeader'
-import FormSimpleAjax from '../components/FormSimpleAjax'
-import Content from '../components/Content'
-import GoogleMap from '../components/GoogleMap'
 import Layout from '../components/Layout'
+import PageHeader from '../components/PageHeader'
 import './ContactPage.css'
+import '../components/Form.css'
+import FormSignUp from '../components/FormSignUp'
 
 // Export Template for use in CMS preview
 export const ContactPageTemplate = ({
   body,
   title,
   subtitle,
-  featuredImage,
-  address,
-  phone,
-  email,
-  locations,
+  featuredImage
 }) => (
   <main className="Contact">
     <PageHeader
@@ -28,41 +22,13 @@ export const ContactPageTemplate = ({
     />
     <section className="section Contact--Section1">
       <div className="container Contact--Section1--Container">
-        <div>
-          <Content source={body} />
-          <div className="Contact--Details">
-            {address && (
-              <a
-                className="Contact--Details--Item"
-                href={`https://www.google.com/maps/search/${encodeURI(
-                  address
-                )}`}
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <MapPin /> {address}
-              </a>
-            )}
-            {phone && (
-              <a className="Contact--Details--Item" href={`tel:${phone}`}>
-                <Smartphone /> {phone}
-              </a>
-            )}
-            {email && (
-              <a className="Contact--Details--Item" href={`mailto:${email}`}>
-                <Mail /> {email}
-              </a>
-            )}
+        <div className="Contact-Container">
+          <div className="col-lg-12 text-center mx-auto">
+            <FormSignUp />
           </div>
-        </div>
-
-        <div>
-          <FormSimpleAjax name="contact_form" />
         </div>
       </div>
     </section>
-
-    <GoogleMap locations={locations} />
   </main>
 )
 
@@ -87,14 +53,8 @@ export const pageQuery = graphql`
         template
         subtitle
         featuredImage
-        address
         phone
         email
-        locations {
-          mapLink
-          lat
-          lng
-        }
       }
     }
   }

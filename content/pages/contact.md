@@ -1,26 +1,20 @@
 ---
 template: ContactPage
 slug: contact
-title: Get in Touch
-featuredImage: '../images/ecomloop_ecommerce_development_header_wall_shadow.png'
-subtitle: Have an interesting project? Let's talk!
-address: |-
-  329 Primrose Ave #117181
-  Burlingame, California 94010
-phone: 508-332-4418
-email: hello@ecomloop.com
+title: Looking to get Bakked?
+featuredImage: ''
+subtitle: Take a glob.
+phone: 720.726.6507
+email: HELP@BAKKED.COM
 locations:
-  - lat: '37.5780511'
-    lng: '-122.3510674'
-    mapLink: ''
+  - lat: '38.9983288'
+    lng: '-76.9722684'
+    mapLink: 'https://www.bakked.com/'
 meta:
-  description: >-
-    Do you have an uncommon business that needs helps growing via technology?
-    Get in touch!
-  title: Contact Page
+  description: Contact us with questions, comments or feedback.
+  title: Contact
 ---
-# Get in touch
 
-Do you have an uncommon business that needs helps growing via technology?
+Please submit your feedback, questions or comments here!
 
-Send us more info and we'll get back to you shortly if it's a good fit.
+We are available Monday-Friday 9AM-5PM MST for calls, text and livechat.

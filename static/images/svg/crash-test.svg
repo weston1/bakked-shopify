@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="135px" height="136px" viewBox="0 0 135 136" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>B1AFC521-14B2-457B-80A1-096BE02B86AA</title>
+    <defs>
+        <polygon id="path-1" points="0 0.32987119 63.629016 0.32987119 63.629016 63.6855631 0 63.6855631"></polygon>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Bakked-Landing---Desktop-HD" transform="translate(-272.000000, -1803.000000)">
+            <g id="Group-11-Copy-2" transform="translate(-802.000000, 1704.000000)">
+                <g id="Crash-Test-Symbol" transform="translate(1141.500000, 167.000000) rotate(-2.000000) translate(-1141.500000, -167.000000) translate(1077.000000, 102.000000)">
+                    <g id="Group-3" transform="translate(0.021203, 65.575252)">
+                        <mask id="mask-2" fill="white">
+                            <use xlink:href="#path-1"></use>
+                        </mask>
+                        <g id="Clip-2"></g>
+                        <path d="M-0.000264,0.32987119 L63.629016,0.32987119 L63.629016,63.6866146 C28.487976,63.6866146 -0.000264,35.3203953 -0.000264,0.32987119" id="Fill-1" fill="#FDC013" mask="url(#mask-2)"></path>
+                    </g>
+                    <path d="M128.339759,63.7452401 L62.3397593,63.7452401 L62.3397593,0.745240131 C98.788297,0.745240131 128.339759,28.9482271 128.339759,63.7452401" id="Fill-4" fill="#FDC013"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

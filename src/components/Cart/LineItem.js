@@ -6,7 +6,7 @@ const LineItem = props => {
   const { line_item } = props
   const {
     removeLineItem,
-    store: { client, checkout },
+    store: { client, checkout }
   } = useContext(StoreContext)
 
   const variantImage = line_item.variant.image ? (
@@ -14,15 +14,16 @@ const LineItem = props => {
       src={line_item.variant.image.src}
       alt={`${line_item.title} product shot`}
       height="60px"
+      className="Cart--Product--Image"
     />
   ) : null
-/* eslint-disable no-unused-vars */
+  /* eslint-disable no-unused-vars */
   const selectedOptions = line_item.variant.selectedOptions
     ? line_item.variant.selectedOptions.map(
         option => `${option.name}: ${option.value} `
       )
     : null
-/* eslint-enable no-unused-vars */
+  /* eslint-enable no-unused-vars */
   const handleRemove = () => {
     removeLineItem(client, checkout.id, line_item.id)
   }

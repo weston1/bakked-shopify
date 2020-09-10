@@ -2,11 +2,13 @@ import React, { useContext } from 'react'
 
 import StoreContext from '../../context/StoreContext'
 import LineItem from './LineItem'
+import Logo from '../../components/Logo'
 import './Cart.css'
+import '../../components/globalStyles.scss'
 
 const Cart = () => {
   const {
-    store: { checkout },
+    store: { checkout }
   } = useContext(StoreContext)
 
   const handleCheckout = () => {
@@ -18,11 +20,13 @@ const Cart = () => {
   })
 
   return (
-    <div>
+    <div className="section">
       <div className="Cart--table">
         <div className="Cart--row">
           <div className="Cart--cell">
-            <b>Image</b>
+            <b>
+              <Logo />
+            </b>
           </div>
           <div className="Cart--cell">
             <b>Product</b>
@@ -49,7 +53,7 @@ const Cart = () => {
           <div className="Cart--cell">&nbsp;</div>
           <div className="Cart--cell">&nbsp;</div>
           <div className="Cart--cell">
-            <h2>Subtotal</h2>
+            <h2 className="Cart--Subtotal">Subtotal</h2>
           </div>
           <div className="Cart--cell">${checkout.subtotalPrice}</div>
           <div className="Cart--cell">&nbsp;</div>
@@ -69,7 +73,7 @@ const Cart = () => {
       </div>
 
       <button
-        className="Button Cart--Checkout"
+        className="button Cart--Checkout"
         style={{ background: 'var(--secondary)' }}
         onClick={handleCheckout}
         disabled={checkout.lineItems.length === 0}

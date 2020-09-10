@@ -1,0 +1,26 @@
+.FindSection {
+  height: 100vh;
+  padding: 7rem 0;
+  background: url('../../static/images/bg/FindSection.jpg');
+  background-size: 80% auto;
+  background-position: bottom center;
+  background-repeat: no-repeat;
+}
+.bg-dusty {
+  background: url('../../static/images/bg/stardust.png'), transparent;
+  background-size: 300px auto;
+  background-position: top right;
+  background-repeat: repeat;
+}
+@media (max-width: 600px) {
+  .FindSection {
+    padding: 7rem 0;
+    height: 60vh;
+  }
+  .FindSection--Title {
+    font-size: 4rem;
+  }
+  .FindSection-large {
+    padding: 12.5rem 0;
+  }
+}

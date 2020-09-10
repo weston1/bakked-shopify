@@ -1,14 +1,119 @@
-.footer {
-  padding: 2rem 0;
-  background: var(--lightGrey);
-  font-size: 1.2rem;
+.brandLogo {
+  width: 100%;
 }
-
-.footer a {
-  color: black;
+.brandLogo img {
+  max-width: 300px;
+  margin: 1rem;
+  padding: 0.5rem;
+}
+.brandLogo a {
+  color: var(--darkGrey);
   text-decoration: none;
+  font-size: 1.5rem;
+  padding: 0.5rem 0;
+  margin: 0;
 }
-
-.footer img.footerImg {
-  max-width: 25px;
+.subscribe {
+  background-color: var(--primary);
+  border-radius: var(--borderRadius);
+  padding: 5rem 40px;
+  box-shadow: 10px 5px 5px rgba(50, 50, 93, 0.11), 0 1px 3px rgba(0, 0, 0, 0.08);
+  overflow: hidden;
+  width: 90%;
+}
+.footerNav {
+  height: 100%;
+  min-height: 100px;
+  color: whitesmoke;
+  padding: 5rem 0;
+  text-align: left;
+}
+.footerNavBorder {
+  border-bottom: solid 1px #fff;
+}
+.footerNav h4 {
+  font-family: var(--font-primary);
+  font-size: 25px;
+  font-weight: 800;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 3.6;
+  letter-spacing: normal;
+  margin: 1rem 2rem 1rem 0;
+}
+.footerNav li {
+  font-family: var(--font-secondary);
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 2;
+  letter-spacing: normal;
+  color: whitesmoke;
+  text-decoration: none;
+  text-align: left;
+  margin: 1rem 2rem 1rem 0;
+  text-decoration: none;
+  list-style: none;
+  padding-right: 0 !important;
+  padding-left: 0 !important;
+}
+.footerNav a {
+  color: whitesmoke;
+  transition: all 0.3s ease-in-out;
+}
+.footerNav a:hover {
+  color: var(--primary);
+}
+.footer {
+  padding: 5rem 0;
+  color: whitesmoke;
+  font-family: var(--font-secondary);
+}
+.footer a {
+  color: whitesmoke;
+  text-decoration: none;
+  padding-left: none !important;
+  transition: all 0.3s ease;
+}
+.footer a:hover {
+  color: var(--primary);
+}
+.footer-credits li {
+  display: inline-flex;
+  padding: 0;
+  color: inherit;
+  font-size: 15px;
+  padding: 0 1rem;
+  line-height: 1;
+  transition: all 0.3s ease;
+}
+.footer-credits li:hover {
+  color: var(--primary);
+}
+.footer-credits p {
+  font-size: 16px;
+}
+.footer--stripes--container {
+  background: url('../../static/images/bg/stardust.png'), var(--secondary);
+  background-size: 300px auto;
+  background-position: top right;
+  background-repeat: repeat;
+}
+.footer--stripes {
+  background: repeating-linear-gradient(
+    -70deg,
+    rgba(242, 180, 63, 1),
+    rgba(242, 180, 63, 1) 70px,
+    rgba(0, 0, 0, 0) 70px,
+    rgba(0, 0, 0, 0) 140px
+  );
+  height: 70px;
+  position: relative;
+  margin-bottom: -70px;
+  overflow: hidden;
+}
+@media (max-width: 600px) {
+  .brandLogo img {
+    display: none;
+  }
 }

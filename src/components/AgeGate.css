@@ -1,0 +1,331 @@
+.AgeGate--Logo {
+  border-bottom: 2px solid #000;
+  width: 100%;
+}
+.AgeGate--Copy {
+  color: #000;
+  border-bottom: 2px solid #000;
+  width: 100%;
+}
+.AgeGate--Input h3,
+.AgeGate--Copy h3 {
+  font-size: 3rem;
+  line-height: 1;
+  text-transform: uppercase;
+}
+.AgeGate--Input p,
+.AgeGate--Copy p {
+  font-size: 1.9rem;
+  line-height: 2;
+  font-weight: 800;
+  text-transform: uppercase;
+}
+.AgeGate--Sticker {
+  display: block;
+  position: absolute;
+  margin-top: 10px;
+  z-index: 2;
+}
+.AgeGate--Input {
+  color: #000;
+  border-bottom: 2px solid #000;
+  width: 100%;
+  font-family: var(--font-primary);
+}
+.buttonClasses-0 {
+  margin: 0 auto;
+  display: inline-flex;
+  width: 400px !important;
+  align-content: center;
+  color: whitesmoke !important;
+  font-weight: 600;
+  font-size: 4rem !important;
+  border-radius: 5px !important;
+  max-width: 50vw !important;
+  z-index: 9999999 !important;
+  transition: all 0.5s !important;
+  height: 80px;
+}
+.buttonClasses-1 {
+  background: var(--lightGrey) !important;
+  color: var(--footerBg) !important;
+  position: absolute;
+  left: 50%;
+  right: 0;
+  top: -250px;
+}
+.buttonClasses-1:hover {
+  box-shadow: 2px 2px 1px rgba(0, 0, 0, 0.5) !important;
+}
+.buttonClasses-2 {
+  background: black !important;
+  color: whitesmoke !important;
+  position: absolute;
+  left: 50%;
+  right: 0;
+  top: -150px;
+}
+.buttonClasses-2:hover {
+  box-shadow: 2px 2px 1px rgba(0, 0, 0, 0.5) !important;
+}
+.Age--Input {
+  font-size: 25px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1;
+  letter-spacing: -0.93px;
+  text-transform: uppercase;
+  font-family: var(--font-primary);
+  flex-grow: 1;
+  box-sizing: border-box;
+  display: block;
+  margin: 0;
+  border: none;
+  padding: 1rem 2rem;
+  transition: border-color 0.2s;
+  resize: none;
+  width: 100%;
+  height: 100px;
+  transition: 0.3s ease all;
+  background: transparent;
+}
+.Age--Input::placeholder {
+  color: #fff !important;
+  font-size: 7rem;
+  line-height: 1;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 2;
+  letter-spacing: -0.93px;
+}
+.Age--Label {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  position: relative;
+  z-index: 1;
+  color: #fff !important;
+}
+
+.Age--Label > span {
+  position: absolute;
+  left: 2rem;
+  top: 1.5rem;
+  transition: 0.3s ease all;
+  opacity: 0.8;
+  z-index: -1;
+}
+
+.popup {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: black;
+  background: cover;
+  overflow: hidden;
+  opacity: 1;
+  z-index: 9998;
+}
+.popup-backdrop {
+  z-index: 99888;
+  position: fixed;
+  width: 100%;
+  height: 120%;
+  top: -3%;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  background: url('../../static/images/bg/stardust.png'), var(--primary);
+  background-position: top right;
+  background-repeat: repeat;
+  min-height: 400px;
+  background-position: center center;
+  background-size: auto;
+  overflow: hidden;
+}
+.footer--stripes--container {
+  background: url('../../static/images/bg/stardust.png'), var(--secondary);
+  background-size: 300px auto;
+  background-position: top right;
+  background-repeat: repeat;
+}
+.footer--stripes {
+  background: repeating-linear-gradient(
+    -70deg,
+    rgba(242, 180, 63, 1),
+    rgba(242, 180, 63, 1) 70px,
+    rgba(0, 0, 0, 0) 70px,
+    rgba(0, 0, 0, 0) 140px
+  );
+  height: 70px;
+  position: relative;
+  margin-bottom: -70px;
+  overflow: hidden;
+}
+.popup video {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  z-index: 0;
+  -ms-transform: translateX(-50%) translateY(-50%);
+  -moz-transform: translateX(-50%) translateY(-50%);
+  -webkit-transform: translateX(-50%) translateY(-50%);
+  transform: translateX(-50%) translateY(-50%);
+}
+
+.popup .container {
+  position: relative;
+  z-index: 2;
+}
+
+.popup .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: black;
+  opacity: 0.5;
+  z-index: 1;
+}
+
+.popup-container {
+  box-sizing: border-box;
+  position: relative;
+  width: 100%;
+  max-width: 425px;
+  margin: 10vh auto 0;
+  border-radius: 10px;
+  background: #000000; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    200deg,
+    #434343,
+    #000000
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    200deg,
+    #434343,
+    #000000
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background-position: center center;
+  background-size: auto 100%;
+  background-repeat: none;
+  padding: 10vh 40px;
+  text-align: center;
+  box-shadow: 0 0 15px 10px rgba(0, 0, 0, 0.5);
+}
+.popup-title {
+  font-size: 2em;
+  line-height: 1.5em;
+  font-weight: 800;
+  text-transform: uppercase;
+  color: white;
+  padding: 0 5vh;
+  text-align: center;
+  vertical-align: center;
+  height: 30vh;
+}
+@media (max-width: 640px) {
+  .popup-container {
+    padding: 5vh 20px;
+  }
+  .popup-title {
+    font-size: 2em;
+    top: 50vh;
+    padding: 10vh 5vh;
+    text-align: center;
+    vertical-align: center;
+    height: 30vh;
+  }
+}
+.popup-description {
+  font-size: 0.8em;
+  line-height: 1.5em;
+  text-transform: uppercase;
+  color: #fff;
+  padding: 5vh 5vh;
+  text-align: center;
+}
+.popup-btn {
+  box-sizing: border-box;
+  width: 20vw;
+  margin: 10px;
+  border: none;
+  font-size: 20px;
+  padding: 10px 5px;
+  cursor: pointer;
+  background-color: rgba(0, 0, 0, 0.8);
+  font-size: 20px;
+  border-radius: 4px;
+  color: #fff;
+  background: #000;
+}
+
+/* End Pop Up */
+.agegate {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  background-color: green;
+}
+.agegate__item {
+  margin: 20px 0;
+}
+.agegate__item.button-container {
+  margin-bottom: 0;
+}
+.agegate__item.checkbox {
+  margin: 0 5px;
+}
+.agegate__item.checkbox > * {
+  display: inline-block;
+  vertical-align: middle;
+}
+.agegate__item.checkbox input {
+  width: 25px;
+  margin: 0;
+}
+.agegate__item.checkbox span {
+  font-size: 1.25rem;
+  color: #707070;
+}
+.agegate form {
+  border-top: 35px solid #ebf2f9;
+  padding: 0 20px 5px;
+  border-radius: 4px;
+  background-color: #fff;
+}
+.agegate form input[type='number'] {
+  width: 125px;
+}
+.agegate form input[type='number']:nth-of-type(2) {
+  margin: 0 10px;
+}
+.agegate form button,
+.agegate form select {
+  width: 100%;
+  margin: 5px 0;
+}
+.agegate form h2 {
+  margin: 0 5px 15px;
+  font-weight: bold;
+}

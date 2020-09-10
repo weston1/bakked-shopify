@@ -6,6 +6,9 @@ import PostSection from '../components/PostSection'
 import Content from '../components/Content'
 import Layout from '../components/Layout'
 import Accordion from '../components/Accordion'
+import FindSection from '../components/FindSection'
+import FormSignUp from '../components/FormSignUp'
+import InstagramSection from '../components/InstagramSection'
 
 export const convertProductsToPostFormat = products => {
   let formattedProducts = []
@@ -14,16 +17,15 @@ export const convertProductsToPostFormat = products => {
       title: service.title,
       excerpt: _.truncate(service.description, {
         length: 140,
-        omission: `…`,
+        omission: `…`
       }),
       featuredImage: service.images[0].originalSrc,
-      slug: '/product/' + service.handle,
+      slug: '/product/' + service.handle
     }
     formattedProducts.push(singleItem)
   })
 
-  return formattedProducts;
-
+  return formattedProducts
 }
 
 // Export Template for use in CMS preview
@@ -32,9 +34,10 @@ export const HomePageTemplate = ({
   subtitle,
   featuredImage,
   body,
+  section1,
   accordion,
   posts,
-  products,
+  products
 }) => (
   <main className="Home">
     <PageHeader
@@ -43,6 +46,12 @@ export const HomePageTemplate = ({
       subtitle={subtitle}
       backgroundImage={featuredImage}
     />
+
+    <section className="section thick bg-dusty">
+      <div className="container">
+        <Content source={section1} className="col-lg-9 text-center mx-auto" />
+      </div>
+    </section>
 
     <section className="section">
       <div className="container">
@@ -54,7 +63,7 @@ export const HomePageTemplate = ({
       <section className="section">
         <div className="container">
           <PostSection
-            title="demo shop"
+            title="Shop Bakked"
             posts={convertProductsToPostFormat(products)}
           />
         </div>
@@ -71,10 +80,16 @@ export const HomePageTemplate = ({
     {!!posts.length && (
       <section className="section">
         <div className="container">
-          <PostSection title="Recent Blog Posts" posts={posts} />
+          <PostSection title="Bakked News" posts={posts} />
         </div>
       </section>
     )}
+
+    <FindSection />
+
+    <FormSignUp />
+
+    <InstagramSection />
   </main>
 )
 
@@ -88,10 +103,10 @@ const HomePage = ({ data: { page, posts, products, projects } }) => (
       posts={posts.edges.map(post => ({
         ...post.node,
         ...post.node.frontmatter,
-        ...post.node.fields,
+        ...post.node.fields
       }))}
       products={products.edges.map(service => ({
-        ...service.node,
+        ...service.node
       }))}
     />
   </Layout>
@@ -112,6 +127,7 @@ export const pageQuery = graphql`
         title
         subtitle
         featuredImage
+        section1
         accordion {
           title
           content

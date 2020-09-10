@@ -1,5 +1,5 @@
 import React from 'react'
-import ChevronDown from 'react-feather/dist/icons/chevron-down'
+import { FiArrowUpCircle } from 'react-icons/fi'
 import _kebabCase from 'lodash/kebabCase'
 import remark from 'remark'
 import remarkHTML from 'remark-html'
@@ -8,7 +8,7 @@ import './Accordion.css'
 export default class Accordion extends React.Component {
   static defaultProps = {
     items: [],
-    className: '',
+    className: ''
   }
 
   // use state to auto close but has issues mobile view. onClick={() => this.handleClick(index)}
@@ -41,7 +41,7 @@ export default class Accordion extends React.Component {
             >
               <h2 className="flex">
                 <span>{item.title}</span>
-                <ChevronDown />
+                <FiArrowUpCircle />
               </h2>
               <div className={'description'}>
                 {item.description}
@@ -50,7 +50,7 @@ export default class Accordion extends React.Component {
                     __html: remark()
                       .use(remarkHTML)
                       .processSync(item.content)
-                      .toString(),
+                      .toString()
                   }}
                 />
                 {item.link && (

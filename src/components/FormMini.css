@@ -1,0 +1,268 @@
+.FormMini {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  max-width: 500px;
+}
+
+.FormMini > * + * {
+  margin-top: 2rem;
+}
+
+.FormMini--Group {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.FormMini--Group .FormMini--Label {
+  width: calc(50% - 1rem);
+}
+
+.FormMini--Label {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  position: relative;
+  z-index: 1;
+  background: var(--white);
+}
+
+.FormMini--Label > span {
+  position: absolute;
+  left: 2rem;
+  top: 1.5rem;
+  transition: 0.3s ease all;
+  opacity: 0.8;
+  z-index: -1;
+}
+
+.FormMini--Input {
+  font-size: 14px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 2;
+  letter-spacing: -0.93px;
+  text-transform: uppercase;
+  font-family: var(--font-secondary);
+  flex-grow: 1;
+  box-sizing: border-box;
+  display: block;
+  margin: 0;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  border-bottom: 3px whitesmoke #000;
+  transition: border-color 0.2s;
+  resize: none;
+  width: 100%;
+  transition: 0.3s ease all;
+  background: transparent;
+}
+
+.FormMini--InputText:valid,
+.FormMini--InputText:invalid:not(:empty),
+.FormMini--InputText:active,
+.FormMini--InputText:focus {
+  padding-bottom: 0.5rem;
+  padding-top: 2.5rem;
+}
+
+.FormMini--InputText:valid + span,
+.FormMini--InputText:not(:empty) + span,
+.FormMini--InputText:invalid:not(:empty) + span,
+.FormMini--InputText:active + span,
+.FormMini--InputText:focus + span {
+  top: 0;
+  left: 0.5rem;
+  font-size: 1.2rem;
+}
+
+.FormMini--Input:required:invalid:not(:empty) {
+  border-color: var(--danger);
+}
+
+.FormMini--Select {
+  background: white;
+  appearance: none;
+  color: #000;
+}
+
+.FormMini--Label.has-arrow:after {
+  content: '';
+  position: absolute;
+  right: 2.5rem;
+  top: 50%;
+  border-right: 1px solid;
+  border-bottom: 1px solid;
+  height: 10px;
+  width: 10px;
+  transform: translateY(-75%) rotate(45deg);
+  pointer-events: none;
+}
+
+.Form--Input:-webkit-autofill {
+  box-shadow: 0 0 0 1000px white inset !important;
+  -webkit-box-shadow: 0 0 0 1000px white inset !important;
+}
+
+.FormMini--Input:focus {
+  outline: none;
+  border-color: black;
+}
+
+.FormMini--Input:focus {
+  outline: none;
+  border-color: black;
+}
+
+.FormMini--Input[disabled],
+.FormMini--SubmitButton[disabled] {
+  opacity: 0.4;
+  pointer-events: none;
+  cursor: progress;
+}
+.FormMini--SubmitButton {
+  background: var(--primary);
+  color: #fff;
+  text-transform: uppercase;
+  text-decoration: none;
+  text-align: justify;
+  vertical-align: middle;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  font-size: 1.8rem;
+  line-height: 1;
+  font-family: var(--font-secondary);
+  display: inline-block;
+  padding: 2rem;
+  margin: 1rem 0.5rem 0.2rem 0;
+  border: none;
+  transition: all 0.3s ease;
+  cursor: pointer;
+  border-radius: var(--borderRadius);
+  text-align: center;
+  max-width: 300px;
+}
+.FormMini--SubmitButton:hover {
+  background-color: var(--secondary);
+  color: var(--secondary);
+}
+.FormMini--SubmitButton:active {
+  background-color: white !important;
+  color: var(--secondary);
+  box-shadow: none;
+}
+.FormMini--Input::placeholder {
+  font-size: 20px;
+  line-height: 1;
+  letter-spacing: 2px;
+  color: whitesmoke;
+}
+
+.FormMini--Alert {
+  background: var(--lightGrey);
+  width: 100%;
+  text-align: center;
+  padding: 2rem;
+}
+
+.FormMini--Input-honey {
+  display: none;
+}
+
+.FormMini fieldset {
+  width: 100%;
+  border: none;
+  margin-left: 0;
+  margin-right: 0;
+  padding: 0;
+  height: 3.1rem;
+}
+
+.FormMini--Radio {
+  display: inline-block;
+  width: auto;
+}
+
+.FormMini--Radio:not(:first-of-type) {
+  margin-left: 1rem;
+}
+
+.FormMini--Radio {
+  border: 1px solid var(--midGrey);
+  overflow: hidden;
+}
+
+.FormMini--Radio span,
+.FormMini-Checkbox span {
+  position: relative;
+  top: auto;
+  left: auto;
+  display: inline-block;
+  z-index: 1;
+  cursor: pointer;
+  user-select: none;
+  padding: 0.2rem 1rem;
+  border-left: 2.5rem solid transparent;
+  color: white;
+}
+
+.FormMini--RadioInput,
+.FormMini--CheckboxInput {
+  display: none;
+}
+
+.FormMini--Radio .FormMini--RadioInput + span::before,
+.FormMini-Checkbox .FormMini--CheckboxInput + span::before {
+  content: '';
+  position: absolute;
+  width: 2rem;
+  height: 2rem;
+  display: block;
+  right: 100%;
+  top: 50%;
+  transform: translateY(-50%);
+  background: var(--lightGrey);
+}
+
+.FormMini--Radio .FormMini--RadioInput:checked + span::before,
+.FormMini-Checkbox .FormMini--CheckboxInput:checked + span::before {
+  content: '';
+  position: absolute;
+  width: 2rem;
+  height: 2rem;
+  display: block;
+  right: 100%;
+  top: 50%;
+  transform: translateY(-50%);
+  background: var(--primary);
+}
+
+.FormMini--RadioInput + span::after,
+.FormMini--CheckboxInput + span::after {
+  transform: scale(0.5);
+  transition: 0.3s ease all;
+  content: '\2713';
+  position: absolute;
+  display: block;
+  top: 3px;
+  left: -17px;
+  font-weight: bold;
+  color: black;
+  opacity: 0;
+}
+
+.FormMini--RadioInput:checked + span::after,
+.FormMini--CheckboxInput:checked + span::after {
+  opacity: 1;
+  transform: scale(1);
+}

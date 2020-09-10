@@ -7,7 +7,7 @@ import Footer from './Footer'
 import ContextProvider from '../provider/ContextProvider'
 
 import 'modern-normalize/modern-normalize.css'
-import './globalStyles.css'
+import './globalStyles.scss'
 
 export default ({ children, meta, title }) => {
   return (
@@ -48,7 +48,7 @@ export default ({ children, meta, title }) => {
                 ? data.allPosts.edges.map(post => {
                     return { ...post.node.fields, ...post.node.frontmatter }
                   })
-                : false,
+                : false
             }
 
           return (

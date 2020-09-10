@@ -1,16 +1,16 @@
 import React, { Component } from 'react'
 import { Location } from '@reach/router'
 import { Link } from 'gatsby'
-import { Menu, X } from 'react-feather'
+import { Menu, X, MapPin } from 'react-feather'
 import Logo from './Logo'
 
-import './Nav.css'
+import './Nav.scss'
 
 export class Navigation extends Component {
   state = {
     active: false,
     activeSubNav: false,
-    currentPath: false,
+    currentPath: false
   }
 
   componentDidMount = () =>
@@ -23,12 +23,11 @@ export class Navigation extends Component {
 
   toggleSubNav = subNav =>
     this.setState({
-      activeSubNav: this.state.activeSubNav === subNav ? false : subNav,
+      activeSubNav: this.state.activeSubNav === subNav ? false : subNav
     })
 
   render() {
     const { active } = this.state,
-      { subNav } = this.props,
       NavLink = ({ to, className, children, ...props }) => (
         <Link
           to={to}
@@ -44,68 +43,26 @@ export class Navigation extends Component {
 
     return (
       <nav className={`Nav ${active ? 'Nav-active' : ''}`}>
-        <div className="Nav--Container container">
+        <div className="Nav--Container">
           <Link to="/" onClick={this.handleLinkClick}>
             <Logo />
           </Link>
           <div className="Nav--Links">
-            {
-            <div
-              className={`Nav--Group ${
-                this.state.activeSubNav === 'posts' ? 'active' : ''
-              }`}
-            >
-              <span
-                className={`NavLink Nav--GroupParent ${
-                  this.props.location.pathname.includes('posts') ||
-                  this.props.location.pathname.includes('blog') ||
-                  this.props.location.pathname.includes('post-categories')
-                    ? 'active'
-                    : ''
-                }`}
-                onClick={() => this.toggleSubNav('posts')}
-                onKeyDown={() => this.toggleSubNav('posts')}
-                role="menuitem"
-                tabIndex={0}
-              >
-                Blog
-                <div className="Nav--GroupLinks">
-                  <NavLink to="/blog/" className="Nav--GroupLink">
-                    All Posts
-                  </NavLink>
-                  {subNav.posts.map((link, index) => (
-                    <NavLink
-                      to={link.slug}
-                      key={'posts-subnav-link-' + index}
-                      className="Nav--GroupLink"
-                    >
-                      {link.title}
-                    </NavLink>
-                  ))}
-                </div>
-              </span>
-            </div>
-            }
-            <NavLink to="/products/">Shop</NavLink>
-
-            <NavLink to="/blog/">Blog</NavLink>
-
-            <a
-              href="https://github.com/ecomloop/headless/"
-              target="_blank"
-              rel="noopener noreferrer"
-              aria-label="Find on GitHub"
-              class="Nav--CTA"
-            >
-              download on github
-            </a>
+            <NavLink to="/gyro/">Gyro</NavLink>
+            <NavLink to="/dabaratus/">Dabaratus</NavLink>
+            <NavLink to="/find/">Find</NavLink>
+            <NavLink to="/faq/">FAQ</NavLink>
+            <NavLink to="/retailer/">Future Retailer</NavLink>
+            <NavLink to="/contact/">Contact</NavLink>
           </div>
-          <button
-            className="Nav--MenuButton"
-            onClick={this.handleMenuToggle}
-            to="/home"
-          >
-            {active ? <X /> : <Menu />}
+          <Link to="/find/" className="Button--locator my-auto">
+            <MapPin size="20px" />
+            <span className="d-none d-md-block d-lg-block">
+              &nbsp;STORE LOCATOR
+            </span>
+          </Link>
+          <button className="Nav--MenuButton" onClick={this.handleMenuToggle}>
+            {active ? <X size="3rem" /> : <Menu size="3rem" className="" />}
           </button>
         </div>
       </nav>
