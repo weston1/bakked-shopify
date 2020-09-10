@@ -2,7 +2,6 @@ import React, { useContext } from 'react'
 
 import StoreContext from '../../context/StoreContext'
 import LineItem from './LineItem'
-import Logo from '../../components/Logo'
 import './Cart.css'
 import '../../components/globalStyles.scss'
 
@@ -20,60 +19,62 @@ const Cart = () => {
   })
 
   return (
-    <div className="section">
-      <div className="Cart--table">
-        <div className="Cart--row">
-          <div className="Cart--cell">
-            <b>
-              <Logo />
-            </b>
+    <div className="section Cart">
+      <div className="container">
+        <div className="row">
+          <div className="col-lg-2">
+            <img
+              src="../images/logo-y.svg"
+              width="25px"
+              alt="Bakked Extracts"
+            />
           </div>
-          <div className="Cart--cell">
+          <div className="col-lg-2">
             <b>Product</b>
           </div>
-          <div className="Cart--cell">
+          <div className="col-lg-2">
             <b>Variant</b>
           </div>
-          <div className="Cart--cell">
+          <div className="col-lg-2">
             <b>Quantity</b>
           </div>
-          <div className="Cart--cell">
+          <div className="col-lg-2">
             <b>Price</b>
           </div>
-          <div className="Cart--cell">
+          <div className="col-lg-2">
             <b>Amount</b>
           </div>
-          <div className="Cart--cell">&nbsp;</div>
+          <div className="col-lg-2">&nbsp;</div>
         </div>
         {line_items}
 
         <div className="Cart--row">
-          <div className="Cart--cell">&nbsp;</div>
-          <div className="Cart--cell">&nbsp;</div>
-          <div className="Cart--cell">&nbsp;</div>
-          <div className="Cart--cell">&nbsp;</div>
-          <div className="Cart--cell">
+          <div className="col-lg-2">&nbsp;</div>
+          <div className="col-lg-2">&nbsp;</div>
+          <div className="col-lg-2">&nbsp;</div>
+          <div className="col-lg-2">&nbsp;</div>
+          <div className="col-lg-2">
             <h2 className="Cart--Subtotal">Subtotal</h2>
           </div>
-          <div className="Cart--cell">${checkout.subtotalPrice}</div>
-          <div className="Cart--cell">&nbsp;</div>
+          <div className="col-lg-2">${checkout.subtotalPrice}</div>
+          <div className="col-lg-2">&nbsp;</div>
         </div>
 
         <div className="Cart--row">
-          <div className="Cart--cell">&nbsp;</div>
-          <div className="Cart--cell">&nbsp;</div>
-          <div className="Cart--cell">&nbsp;</div>
-          <div className="Cart--cell">&nbsp;</div>
-          <div className="Cart--cell">
+          <div className="col-lg-2">&nbsp;</div>
+          <div className="col-lg-2">&nbsp;</div>
+          <div className="col-lg-2">&nbsp;</div>
+          <div className="col-lg-2">&nbsp;</div>
+          <div className="col-lg-2">
             <h2>Total</h2>
           </div>
-          <div className="Cart--cell">${checkout.totalPrice}</div>
-          <div className="Cart--cell">&nbsp;</div>
+          <div className="col-lg-12">${checkout.totalPrice}</div>
+          <div className="col-lg-12">&nbsp;</div>
         </div>
       </div>
 
       <button
-        className="button Cart--Checkout"
+        className="Button Cart--Checkout"
         style={{ background: 'var(--secondary)' }}
         onClick={handleCheckout}
         disabled={checkout.lineItems.length === 0}

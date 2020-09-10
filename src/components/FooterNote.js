@@ -5,22 +5,29 @@ import Image from './Image'
 import './Form.css'
 import './FooterNote.css'
 
-const FooterNote = ({ footerNote1, footerNote2 }) => {
+let footerNote1 = '../images/photos/the-dabaratus-cta.jpg'
+
+const FooterNote = ({ title, footerNote1, footerNote2 }) => {
   return (
     <section className="FooterNote">
       <div className="container text-center">
         <h3>See How We Made</h3>
       </div>
       <div className="row mx-auto bg-primary">
-        <div className="col-lg-6">
-          <img src={footerNote1} alt="Bakked Extracts" className="img-fluid" />
+        <div className="col-lg-6 FooterNote--Image">
+          {footerNote1 && (
+            <Image
+              resolutions="large"
+              src={footerNote1}
+              alt={title}
+              size="cover"
+            />
+          )}
         </div>
-        <div className="col-lg-6 bg-secondary">
-          <Image
-            source={footerNote2}
-            alt="Bakked Extracts"
-            className="img-fluid"
-          />
+        <div className="col-lg-6">
+          {footerNote2 && (
+            <Image src={footerNote2} alt={title} className="img-fluid" />
+          )}
         </div>
       </div>
     </section>
@@ -28,6 +35,7 @@ const FooterNote = ({ footerNote1, footerNote2 }) => {
 }
 
 FooterNote.propTypes = {
+  title: PropTypes.string,
   footerNote1: PropTypes.string,
   footerNote2: PropTypes.string
 }

@@ -3,8 +3,26 @@
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
-  height: 4rem;
-  width: 4rem;
+  height: 2.4rem;
+  width: 120px;
   align-items: center;
   justify-content: center;
+  outline: none;
+}
+.Logo svg {
+  color: var(--secondary);
+  transition: all ease 0.3s;
+}
+.Logo svg:hover {
+  color: var(--darkGrey);
+  transform: scale(1.1);
+}
+.Logo svg:active {
+  color: var(--darkGrey);
+  transform: scale(0.95);
+}
+@media (max-width: 600px) {
+  .Logo svg {
+    color: var(--primary) !important;
+  }
 }

@@ -1,4 +1,5 @@
-div.Cart--table {
+div.Cart--table,
+.Cart {
   display: table;
   border-collapse: collapse;
   border-spacing: 10px;
@@ -32,6 +33,28 @@ button.Cart--Checkout {
   font-size: 21px;
 }
 
+.Thumbnail--Section {
+  background: #0f2027; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #2c5364,
+    #203a43,
+    #0f2027
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #2c5364,
+    #203a43,
+    #0f2027
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  height: 500px;
+  width: 100px;
+  border-radius: var(--borderRadius);
+}
+.test-img {
+  position: absolute;
+  z-index: 2;
+}
 .Cart--Product--Image {
   border-radius: 10px;
 }

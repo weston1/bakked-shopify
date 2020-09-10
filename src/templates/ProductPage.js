@@ -1,8 +1,6 @@
 import React from 'react'
 import { graphql, Link } from 'gatsby'
 
-import { ChevronLeft } from 'react-feather'
-
 import Layout from '../components/Layout'
 import ProductForm from '../components/ProductForm'
 import ProductGalleryThumbnails from '../components/ProductGalleryThumbnails'

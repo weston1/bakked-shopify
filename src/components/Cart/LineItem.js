@@ -14,7 +14,7 @@ const LineItem = props => {
       src={line_item.variant.image.src}
       alt={`${line_item.title} product shot`}
       height="60px"
-      className="Cart--Product--Image"
+      className="Cart--Product--Image img-fluid"
     />
   ) : null
   /* eslint-disable no-unused-vars */
@@ -30,27 +30,41 @@ const LineItem = props => {
 
   return (
     <>
-      <div className="Cart--row">
-        <div className="Cart--cell">
-          <span className="Cart--Thumbnail">{variantImage}</span>
+      <div className="Cart container row bg-dusty">
+        <div className="col-lg-6 Thumbnail--Section">
+          <span className="Cart--Thumbnail my-auto">
+            <img
+              src="../../images/photos/gyro-no-bg.png"
+              className="test-img"
+            />
+          </span>
+
+          <span className="Cart--Thumbnail my-auto">{variantImage}</span>
         </div>
-        <div className="Cart--cell">{line_item.title}</div>
-        <div className="Cart--cell">
-          {line_item.variant.selectedOptions[0].value}
-        </div>
-        <div className="Cart--cell">{line_item.quantity}</div>
-        <div className="Cart--cell">${line_item.variant.price}</div>
-        <div className="Cart--cell">
-          ${line_item.quantity * line_item.variant.price}
-        </div>
-        <div className="Cart--cell">
-          <button
-            className="Button"
-            style={{ background: 'var(--midGrey)', color: 'var(--secondary)' }}
-            onClick={handleRemove}
-          >
-            Remove
-          </button>
+        <div className="col-lg-6">
+          <div className="row">
+            <div className="col-lg-2">{line_item.title}</div>
+            <div className="col-lg-2">
+              {line_item.variant.selectedOptions[0].value}
+            </div>
+            <div className="col-lg-2">{line_item.quantity}</div>
+            <div className="col-lg-2">${line_item.variant.price}</div>
+            <div className="col-lg-2">
+              ${line_item.quantity * line_item.variant.price}
+            </div>
+            <div className="col-lg-2">
+              <button
+                className=""
+                style={{
+                  background: 'var(--secondary)',
+                  color: '#ffffff'
+                }}
+                onClick={handleRemove}
+              >
+                Remove
+              </button>
+            </div>
+          </div>
         </div>
       </div>
     </>

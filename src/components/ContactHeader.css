@@ -1,0 +1,42 @@
+.ContactHeader {
+  color: var(--secondary);
+  padding: 20rem 0;
+}
+
+.ContactHeader .BackgroundImage {
+  opacity: 0.99;
+  background: rgba(0, 0, 0, 0.6);
+}
+
+.ContactHeader-large {
+  padding: 20rem 0;
+}
+
+.ContactHeader--Title {
+  font-size: 8rem;
+  line-height: 1.2;
+  margin-bottom: 0;
+  text-align: left;
+  color: #fff;
+  font-family: var(--font-primary);
+}
+
+.ContactHeader--Subtitle {
+  font-weight: 400;
+  font-size: 1.8rem;
+  text-align: left;
+  font-family: var(--font-secondary);
+}
+
+.ContactHeader .container {
+  animation: fadeIn 0.5s ease-out;
+}
+
+@media (max-width: 600px) {
+  .ContactHeader {
+    padding: 7rem 0;
+  }
+  .ContactHeader-large {
+    padding: 12.5rem 0;
+  }
+}

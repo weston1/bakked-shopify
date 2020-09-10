@@ -1,6 +1,7 @@
 import React, { Fragment } from 'react'
 import Helmet from 'react-helmet'
 import { StaticQuery, graphql } from 'gatsby'
+import AgeGate from './AgeGate'
 import Meta from './Meta'
 import Nav from './Nav'
 import Footer from './Footer'
@@ -42,14 +43,7 @@ export default ({ children, meta, title }) => {
         `}
         render={data => {
           const { siteTitle, socialMediaCard, googleTrackingId } =
-              data.settingsYaml || {},
-            subNav = {
-              posts: data.allPosts.hasOwnProperty('edges')
-                ? data.allPosts.edges.map(post => {
-                    return { ...post.node.fields, ...post.node.frontmatter }
-                  })
-                : false
-            }
+            data.settingsYaml || {}
 
           return (
             <Fragment>
@@ -67,6 +61,12 @@ export default ({ children, meta, title }) => {
                 {/* Add font link tags here */}
               </Helmet>
 
+              {/* AgeGate */}
+
+              <Fragment>
+                <AgeGate />
+              </Fragment>
+
               <Meta
                 googleTrackingId={googleTrackingId}
                 absoluteImageUrl={
@@ -78,7 +78,7 @@ export default ({ children, meta, title }) => {
                 {...data.settingsYaml}
               />
 
-              <Nav subNav={subNav} />
+              <Nav />
 
               <Fragment>{children}</Fragment>
 

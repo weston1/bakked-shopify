@@ -29,11 +29,11 @@ export default () => (
                 </li>
               </div>
             </div>
-            <div className="col-lg-3 col-12 text-center-sm">
+            <div className="col-lg-3 col-md-6 col-12 text-center-sm">
               <h4>Subscribe</h4>
               <FormMini />
             </div>
-            <div className="col-lg-5 col-12">
+            <div className="col-lg-5 col-md-6 col-12">
               <div className="col-lg-12 mx-auto text-center-sm">
                 <h4>Explore</h4>
                 <div className="row">
@@ -97,7 +97,7 @@ export default () => (
       </div>
       <footer className="footer">
         <div className="row">
-          <div className="col-lg-6 footer-credits">
+          <div className="col-lg-6 footer-credits py-3">
             <li>
               <Link to="/privacy">Terms &amp; Conditions</Link>
             </li>
