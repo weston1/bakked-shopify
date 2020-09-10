@@ -5,7 +5,11 @@ import { graphql } from 'gatsby'
 import PageHeader from '../components/PageHeader'
 import Content from '../components/Content'
 import Layout from '../components/Layout'
-import './ContactPage.css'
+import FormMini from '../components/FormMini'
+import StripesMarquee from '../components/StripesMarquee'
+import Loilpoints from '../components/Loilpoints'
+import PosPartners from '../components/PosPartners'
+import InstagramSection from '../components/InstagramSection'
 
 // Export Template for use in CMS preview
 // < Mapbox / > USE FOR MAPBOX PLUGIN
@@ -16,13 +20,24 @@ export const FindPageTemplate = ({ title, subtitle, featuredImage, body }) => (
       subtitle={subtitle}
       backgroundImage={featuredImage}
     />
+    <section className="section">
+      <div className="container">
+        <FormMini className="col-lg-6 text-center mx-auto" />
+      </div>
+    </section>
+    <StripesMarquee />
     <section className="section Find-Card-Overlay">
       <div className="container">
-        <div className="Find-Card">
+        <div className="col-lg-10 Find-Card">
           <Content source={body} />
         </div>
       </div>
     </section>
+
+    <Loilpoints />
+    <section className="bg-Goo"></section>
+    <PosPartners />
+    <InstagramSection />
   </main>
 )
 

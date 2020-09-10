@@ -1593,6 +1593,13 @@ blockquote {
   background-position: top left;
   background-repeat: no-repeat;
 }
+.bg-Goo {
+  background: url('../../static/images/bg/Goo-BG.jpg');
+  background-size: 100vw;
+  background-position: top center;
+  background-repeat: no-repeat;
+  min-height: 500px;
+}
 /* Product Page */
 .Product--Header {
   z-index: 2;

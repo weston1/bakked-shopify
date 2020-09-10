@@ -61,6 +61,8 @@ export const HomePageTemplate = ({
       </div>
     </section>
 
+    <StripesMarquee />
+
     <section className="section bg-primary-dusty">
       <div className="bg-product-stripes">
         <div className="container">

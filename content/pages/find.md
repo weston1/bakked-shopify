@@ -3,7 +3,7 @@ template: FindPage
 slug: find
 title: LOCATION FINDER
 subtitle: Bakked products are available for purchase throughout California, Colorado, Oregon, New Mexico, Maine & Vermont. You can find a Bakked retailer near you using the map below.
-featuredImage: ' '
+featuredImage: '../images/bg/FindSection.jpg'
 
 meta:
   description: Find Bakked locations here.

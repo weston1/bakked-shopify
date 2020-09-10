@@ -6,7 +6,7 @@ import './InstagramSection.css'
 
 const InstagramSection = ({ title, className = '' }) => {
   return (
-    <section className="InstagramSection">
+    <section className="InstagramSection bg-dusty">
       <div className="container col-lg-10 mx-auto text-center">
         <h2 className="InstagramSection--Title">#GetBakked</h2>
         <Instagram size="5rem" />
