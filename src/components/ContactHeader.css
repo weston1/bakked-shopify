@@ -27,6 +27,29 @@
   text-align: left;
   font-family: var(--font-secondary);
 }
+.ContactHeader--Method {
+  display: inline-block;
+  width: 100%;
+  font-family: var(--font-secondary);
+  font-weight: 400;
+  font-size: 2rem;
+  line-height: 1;
+  display: flex;
+  justify-content: left;
+  align-items: left;
+  color: #fff;
+}
+.ContactHeader--Method--Icon {
+  display: inline-block;
+  line-height: 1;
+  text-align: left;
+  vertical-align: middle;
+  display: flex;
+  justify-content: left;
+  align-items: left;
+  color: var(--primary);
+  margin-right: 1rem;
+}
 
 .ContactHeader .container {
   animation: fadeIn 0.5s ease-out;

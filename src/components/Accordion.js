@@ -41,23 +41,45 @@ export default class Accordion extends React.Component {
             >
               <h2 className="flex">
                 <span>{item.title}</span>
-                <FiArrowUpCircle />
+                <FiArrowUpCircle color="var(--primary)" />
               </h2>
-              <div className={'description'}>
-                {item.description}
-                <div
-                  dangerouslySetInnerHTML={{
-                    __html: remark()
-                      .use(remarkHTML)
-                      .processSync(item.content)
-                      .toString()
-                  }}
-                />
-                {item.link && (
-                  <div href={item.link} className="button">
-                    {item.linkTitle}
+              <div className="row">
+                <div className="col-3">
+                  <div className={'description'}>
+                    {item.description}
+                    <div
+                      dangerouslySetInnerHTML={{
+                        __html: remark()
+                          .use(remarkHTML)
+                          .processSync(item.subject)
+                          .toString()
+                      }}
+                    />
+                    {item.link && (
+                      <div href={item.link} className="button">
+                        {item.linkTitle}
+                      </div>
+                    )}
                   </div>
-                )}
+                </div>
+                <div className="col-9">
+                  <div className={'description'}>
+                    {item.description}
+                    <div
+                      dangerouslySetInnerHTML={{
+                        __html: remark()
+                          .use(remarkHTML)
+                          .processSync(item.content)
+                          .toString()
+                      }}
+                    />
+                    {item.link && (
+                      <div href={item.link} className="button">
+                        {item.linkTitle}
+                      </div>
+                    )}
+                  </div>
+                </div>
               </div>
             </div>
           ))}

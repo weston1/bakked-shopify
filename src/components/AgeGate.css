@@ -2,7 +2,12 @@
   position: absolute;
   width: 100vw;
   height: 100vh;
-  top: 20%;
+  top: 10vh;
+  bottom: 10vh;
+  align-items: center;
+  flex-direction: column;
+  position: fixed;
+  justify-content: center;
 }
 .AgeGate--Logo {
   border-bottom: 2px solid #000;
@@ -51,27 +56,27 @@
   max-width: 50vw !important;
   z-index: 9999999 !important;
   transition: all 0.5s !important;
-  height: 80px;
+  height: 100px;
   border-bottom: 2px solid #000;
 }
 .buttonClasses-1 {
-  background: var(--lightGrey) !important;
-  color: var(--footerBg) !important;
+  background: var(--secondary) !important;
+  color: white !important;
   position: absolute;
   left: 0;
   right: 25%;
-  top: -500px;
+  top: -420px;
 }
 .buttonClasses-1:hover {
   box-shadow: 2px 2px 1px rgba(0, 0, 0, 0.5) !important;
 }
 .buttonClasses-2 {
-  background: black !important;
-  color: whitesmoke !important;
+  background: var(--lightGrey) !important;
+  color: black !important;
   position: absolute;
   right: 0;
   right: 25%;
-  top: -500px;
+  top: -420px;
 }
 .buttonClasses-2:hover {
   box-shadow: 2px 2px 1px rgba(0, 0, 0, 0.5) !important;

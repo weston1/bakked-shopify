@@ -2,11 +2,14 @@ import React from 'react'
 import { graphql } from 'gatsby'
 
 import Layout from '../components/Layout'
+import Content from '../components/Content'
 import ContactHeader from '../components/ContactHeader'
 import './ContactPage.css'
 import '../components/Form.css'
-import FormSignUp from '../components/FormSignUp'
+import FormSimple from '../components/FormSimple'
+import PostSection from '../components/PostSection'
 import Accordion from '../components/Accordion'
+import InstagramSection from '../components/InstagramSection'
 
 // Export Template for use in CMS preview
 export const ContactPageTemplate = ({
@@ -14,7 +17,8 @@ export const ContactPageTemplate = ({
   title,
   subtitle,
   featuredImage,
-  accordion
+  accordion,
+  section1
 }) => (
   <main className="Contact">
     <ContactHeader
@@ -22,18 +26,20 @@ export const ContactPageTemplate = ({
       subtitle={subtitle}
       backgroundImage={featuredImage}
     />
-    <section className="section Contact--Section1">
-      <h3>FAQ QUESTIONS</h3>
-      <Accordion title="features" items={accordion} />
-
-      <div className="container Contact--Section1--Container">
-        <div className="Contact-Container">
-          <div className="col-lg-12 text-center mx-auto">
-            <FormSignUp />
+    <section className="section Contact--Section1 bg-dusty">
+      <PostSection title="FAQ" />
+      <div className="container">
+        <Accordion title="features" items={accordion} />
+      </div>
+      <div className="section">
+        <div className="container">
+          <div className="col-lg-8 mx-auto text-center">
+            <Content source={section1} />
           </div>
         </div>
       </div>
     </section>
+    <InstagramSection />
   </main>
 )
 
@@ -58,9 +64,11 @@ export const pageQuery = graphql`
         template
         subtitle
         featuredImage
+        section1
         accordion {
           title
           content
+          subject
         }
       }
     }

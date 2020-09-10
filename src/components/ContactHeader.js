@@ -2,7 +2,8 @@ import React from 'react'
 import PropTypes from 'prop-types'
 
 import Image from './Image'
-import Content from './Content'
+import FormMini from './FormMini'
+import { FiMail, FiPhoneCall } from 'react-icons/fi'
 import './ContactHeader.css'
 
 const ContactHeader = ({
@@ -24,11 +25,22 @@ const ContactHeader = ({
           size="cover"
         />
       )}
-      <div className="container col-lg-3">
-        <h1 className="ContactHeader--Title">{title}</h1>
-        {subtitle && (
-          <Content className="ContactHeader--Subtitle" src={subtitle} />
-        )}
+      <div className="container">
+        <div className="col-lg-5">
+          <h1 className="ContactHeader--Title">{title}</h1>
+          <div className="ContactHeader--Method">
+            <FiMail size="2.4rem" className="ContactHeader--Method--Icon" />
+            <p>help@bakked.com</p>
+          </div>
+          <div className="ContactHeader--Method">
+            <FiPhoneCall
+              size="2.4rem"
+              className="ContactHeader--Method--Icon"
+            />
+            <p>720.420.4200 </p>
+          </div>
+          <FormMini />
+        </div>
       </div>
     </div>
   )

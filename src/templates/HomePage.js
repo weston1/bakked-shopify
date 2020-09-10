@@ -1,12 +1,15 @@
 import React from 'react'
-import { graphql } from 'gatsby'
+import { graphql, Link } from 'gatsby'
 import _ from 'lodash'
+import { FiMapPin } from 'react-icons/fi'
 import PageHeader from '../components/PageHeader'
 import PostSection from '../components/PostSection'
 import Content from '../components/Content'
 import Layout from '../components/Layout'
-import Accordion from '../components/Accordion'
 import FindSection from '../components/FindSection'
+import StripesMarquee from '../components/StripesMarquee'
+import ExtractTypes from '../components/ExtractTypes'
+
 import FormSignUp from '../components/FormSignUp'
 import InstagramSection from '../components/InstagramSection'
 
@@ -35,7 +38,12 @@ export const HomePageTemplate = ({
   featuredImage,
   body,
   section1,
-  accordion,
+  sectionTwo,
+  sectionTwoImg,
+  sectionTwoImg2,
+  section3,
+  bakkedImg3,
+  bakkedImg4,
   posts,
   products
 }) => (
@@ -50,6 +58,74 @@ export const HomePageTemplate = ({
     <section className="section thick bg-dusty">
       <div className="container">
         <Content source={section1} className="col-lg-9 text-center mx-auto" />
+      </div>
+    </section>
+
+    <section className="section bg-primary-dusty">
+      <div className="bg-product-stripes">
+        <div className="container">
+          <div className="row col-lg-12 mx-auto">
+            <div className="col-lg-5 p-3">
+              <img
+                src={sectionTwoImg}
+                alt={title}
+                className="img-fluid mx-auto py-4 text-center"
+              />
+              <Content source={sectionTwo} className="text-left" />
+              <div className="Button-block">
+                <Link to="/products/" className="Button">
+                  SEE WHY WE MADE IT
+                </Link>
+                <Link to="/find/" className="Button">
+                  <FiMapPin size="12px" className="title" />
+                  &nbsp; FIND A DISPENSARY
+                </Link>
+              </div>
+            </div>
+            <div className="col-lg-7 my-auto bg-dots">
+              <img
+                src={sectionTwoImg2}
+                alt={title}
+                className="img-fluid mx-auto text-center"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section className="section bg-primary-dusty">
+      <div className="bg-product-stripes-left">
+        <div className="container">
+          <div className="row">
+            <div className="col-lg-6 mx-auto py-5 bg-dots-left">
+              <img
+                src={bakkedImg3}
+                alt={title}
+                className="img-fluid mx-auto text-center"
+              />
+            </div>
+            <div className="col-lg-4 my-auto">
+              <img
+                src={bakkedImg4}
+                alt={title}
+                className="img-fluid mx-auto text-center"
+              />
+              <Content source={section3} />
+              <Link to="/products" className="Button">
+                SEE WHY WE MADE IT
+              </Link>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <StripesMarquee />
+
+    <section className="section">
+      <div className="container">
+        <ExtractTypes />
       </div>
     </section>
 
@@ -70,12 +146,9 @@ export const HomePageTemplate = ({
       </section>
     )}
 
-    <section className="section">
-      <div className="container">
-        <PostSection title="features" />
-        <Accordion title="features" items={accordion} />
-      </div>
-    </section>
+    <FindSection />
+
+    <FormSignUp />
 
     {!!posts.length && (
       <section className="section">
@@ -84,10 +157,6 @@ export const HomePageTemplate = ({
         </div>
       </section>
     )}
-
-    <FindSection />
-
-    <FormSignUp />
 
     <InstagramSection />
   </main>
@@ -128,6 +197,12 @@ export const pageQuery = graphql`
         subtitle
         featuredImage
         section1
+        sectionTwo
+        sectionTwoImg
+        sectionTwoImg2
+        section3
+        bakkedImg3
+        bakkedImg4
         accordion {
           title
           content

@@ -20,8 +20,8 @@ export default () => (
     }}
   >
     <Fade>
-      <div className="section my-auto">
-        <div className="my-auto col-lg-12">
+      <div className="section">
+        <div className="my-auto AgeGate--Section col-lg-12">
           <div className="AgeGate--Logo row container">
             <div className="ml-auto my-auto col-lg-8">
               <br />

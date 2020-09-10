@@ -16,11 +16,14 @@
 .Accordion--item {
   position: relative;
   padding: 5rem;
-  background: white;
-  border-top: 2px solid #000;
-  border-bottom: 1px solid #000;
+  background: transparent;
+  border-bottom: 2px solid #000;
   cursor: pointer;
   outline: none;
+  width: 100%;
+}
+.Accordion--item:nth-of-type(1) {
+  border-top: 2px solid #000;
 }
 
 .Accordion--item h2 {
@@ -51,7 +54,7 @@
 }
 
 .Accordion--item.active .description {
-  padding-top: 2rem;
+  padding: 3rem 0 1rem 0;
   opacity: 1;
-  max-height: 50rem;
+  max-height: 100rem;
 }

@@ -15727,6 +15727,11 @@ react-textarea-autosize@^7.1.0:
     "@babel/runtime" "^7.1.2"
     prop-types "^15.6.0"
 
+react-ticker@^1.2.2:
+  version "1.2.2"
+  resolved "https://registry.yarnpkg.com/react-ticker/-/react-ticker-1.2.2.tgz#12cda5ff8266c6fe90ffcd8c58e12ba1596ddf24"
+  integrity sha512-PXUujoPJvajxwOfosuuujlrBUrjgGp4FB4haWFOI25ujhMppW4SuLkiOdQ9AylrWN3yTHWdk2kbQWe3n9SjFGA==
+
 react-toggled@^1.1.2:
   version "1.2.7"
   resolved "https://registry.yarnpkg.com/react-toggled/-/react-toggled-1.2.7.tgz#be1b72058358dd1ffe11811e4427e5c9cf140c10"

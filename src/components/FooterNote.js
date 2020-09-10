@@ -5,8 +5,6 @@ import Image from './Image'
 import './Form.css'
 import './FooterNote.css'
 
-let footerNote1 = '../images/photos/the-dabaratus-cta.jpg'
-
 const FooterNote = ({ title, footerNote1, footerNote2 }) => {
   return (
     <section className="FooterNote">
