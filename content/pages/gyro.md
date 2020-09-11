@@ -56,6 +56,7 @@ featureBlock1: '../images/photos/gyro-product.png'
 featureBlock2: '../images/photos/gyro-product.png'
 footerNote1: '../images/photos/the-dabaratus-cta.jpg'
 footerNote2: '../images/photos/our-oil-cta.jpg'
+partnerProduct: Dabaratus
 meta:
   description: Bakked Dabaratus is the sesh without the mess. The most conventient way to take dabs. Fully activated cannabis oil.
   title: Gyro

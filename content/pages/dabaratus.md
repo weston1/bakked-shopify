@@ -50,6 +50,8 @@ featureArray:
   - alt: HEAT RESISTANT METAL TIP FOR DABBING
     image: '../images/svg/heat.svg'
     subtitle: HEAT RESISTANT METAL TIP FOR DABBING
+partnerProduct: Gyro
+
 meta:
   description: Bakked Dabaratus is the sesh without the mess. The most conventient way to take dabs. Fully activated cannabis oil.
   title: Dabaratus

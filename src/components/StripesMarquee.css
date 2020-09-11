@@ -1,11 +1,11 @@
 /* Stripes Marquee */
 .StripesMarquee {
   margin: 0 auto;
-  height: 30vh;
+  height: 50vh;
   width: 100vw;
   z-index: 0;
   overflow: hidden;
-  margin-top: -50px;
+  margin-top: -200px;
 }
 .ticker {
   padding-top: 50px;
@@ -25,6 +25,7 @@
     rgba(0, 0, 0, 0) 140px
   );
   background-color: #000;
+  height: 200px;
 }
 .StripesMarquee--Motion h1 {
   color: transparent;

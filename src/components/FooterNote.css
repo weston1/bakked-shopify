@@ -1,8 +1,13 @@
 .FooterNote {
   width: 100vw;
   height: 400px;
+  display: block;
 }
 .FooterNote--Image--Container {
+  overflow: hidden;
+}
+.FooterNote--Image--Block {
+  min-height: 400px;
 }
 .FooterNote--Image {
   height: 400px;

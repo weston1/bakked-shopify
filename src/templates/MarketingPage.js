@@ -36,7 +36,8 @@ export const ProductsPageTemplate = ({
   featureBlock1,
   featureBlock2,
   footerNote1,
-  footerNote2
+  footerNote2,
+  partnerProduct
 }) => (
   <main className="bg-dusty">
     <section className="BackgroundVideo-section">
@@ -60,7 +61,7 @@ export const ProductsPageTemplate = ({
             <img
               src={featureBlock1}
               alt={title}
-              className="img-fluid mx-auto text-center"
+              className="img-fluid mx-auto text-center featureProduct"
             />
           </div>
         </div>
@@ -161,7 +162,7 @@ export const ProductsPageTemplate = ({
     <FooterNote
       footerNote1={footerNote1}
       footerNote2={footerNote2}
-      title={title}
+      partnerProduct={partnerProduct}
     ></FooterNote>
   </main>
 )
@@ -208,6 +209,7 @@ export const pageQuery = graphql`
         featureBlock2
         footerNote1
         footerNote2
+        partnerProduct
       }
     }
   }
