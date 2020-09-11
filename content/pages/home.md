@@ -15,7 +15,7 @@ sectionTwo: >-
 sectionTwoImg: '../images/photos/stickers/gyro-label.png'
 sectionTwoImg2: '../images/photos/gyro-package.png'
 bakkedImg1: '../images/photos/stickers/gyro-label.png'
-bakkedImg3: '../images/photos/dabaratus-new.png'
+bakkedImg3: '../images/photos/dabaratus/dabaratus-new.png'
 bakkedImg4: '../images/photos/stickers/dabaratus-label.png'
 icon: '../images/photos/svg/crash-test.svg'
 sticker1: '../images/photos/stickers/arrow.png'

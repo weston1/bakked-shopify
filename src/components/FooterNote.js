@@ -11,21 +11,35 @@ const FooterNote = ({ title, footerNote1, footerNote2 }) => {
       <div className="container text-center">
         <h3>See How We Made</h3>
       </div>
-      <div className="row mx-auto bg-primary">
-        <div className="col-lg-6 FooterNote--Image">
+      <div className="row mx-auto">
+        <div className="col-lg-6">
           {footerNote1 && (
             <Image
+              background
               resolutions="large"
               src={footerNote1}
               alt={title}
               size="cover"
+              className="FooterNote--Image"
             />
           )}
+          <div className="container relative">
+            <h1>{title}</h1>
+          </div>
         </div>
         <div className="col-lg-6">
           {footerNote2 && (
-            <Image src={footerNote2} alt={title} className="img-fluid" />
+            <Image
+              background
+              src={footerNote2}
+              alt={title}
+              size="cover"
+              className="FooterNote--Image"
+            />
           )}
+          <div className="container relative col-lg-5 mx-auto">
+            <h1>{title}</h1>
+          </div>
         </div>
       </div>
     </section>

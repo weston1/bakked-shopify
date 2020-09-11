@@ -1,8 +1,8 @@
 import React from 'react'
 import { graphql } from 'gatsby'
 
-import PageHeader from '../components/PageHeader'
 import FormRetailer from '../components/FormRetailer'
+import StripesMarquee from '../components/StripesMarquee'
 import InstagramSection from '../components/InstagramSection'
 import Layout from '../components/Layout'
 
@@ -11,16 +11,14 @@ export const BakkedDefaultTemplate = ({
   title,
   subtitle,
   featuredImage,
-  img1,
+  img1
 }) => (
-  <main className="BakkedDefault bg-dusty">
-    <PageHeader
-      title={title}
-      subtitle={subtitle}
-      backgroundImage={featuredImage}
-      className=" col-lg-10 mx-auto"
-    />
-    <section className="section">
+  <main className="BakkedDefault section bg-dusty">
+    <section className="section thick bg-dusty">
+      <div className="container col-lg-8 mx-auto text-center">
+        <h2>{title}</h2>
+        <p>{subtitle}</p>
+      </div>
       <div className="container">
         <FormRetailer />
         <div className="container text-center">
@@ -33,8 +31,7 @@ export const BakkedDefaultTemplate = ({
         </div>
       </div>
     </section>
-    <section className="section thick bg-stripes"></section>
-    <section className="section thick"></section>
+    <StripesMarquee />
 
     <InstagramSection />
   </main>

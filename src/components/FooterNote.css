@@ -1,5 +1,14 @@
+.FooterNote {
+  width: 100vw;
+  height: 400px;
+}
+.FooterNote--Image--Container {
+}
 .FooterNote--Image {
-  height: 200px;
-  width: 100px;
-  background: red;
+  height: 400px;
+  width: 100%;
+  background-size: 100% 100%;
+}
+.FooterNote--Image:hover {
+  background-size: 120%;
 }

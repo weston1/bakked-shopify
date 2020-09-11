@@ -4,11 +4,11 @@ slug: dabaratus
 title:
 featuredImage: '../images/photos/about-img-2.jpg'
 subtitle:
-
+sliderTagline: Sticky Situations Suck
 video: '../images/bg/bakked_outro_3.mp4'
 videoLogo: '../images/bg/bakked_outro_3.mp4'
 videoPoster: '../images/bg/bakked_poster.gif'
-videoTitle: Also background videos, with poster image & title overlay.
+videoTitle: Take a glob.
 section1: >-
   ## THE ULTIMATE DABBING APARATUS
 
@@ -23,8 +23,20 @@ section3: >-
   Looking for flavor? Look no further. Live Resin is a full-spectrum, flavor-rich extract that lets you taste every flavor and feel every feeling. Live Resin is made up of terpene fractions and high-potency cannabinoid crystals.
 
   Depending on the method used to refine the Live Resin, consistencies and ratios of terpene extract to cannabinoid crystals can vary, from Sauces (larger crystals) to Sugars (finer, sand-like consistency).
-featureBlock1: '../images/photos/dab_4x.gif'
-featureBlock2: '../images/photos/dab_4x.gif'
+section3Features: >-
+  - ANTI-GRAVITY PROOF
+
+  - ZERO SPILL
+
+  -POCKET PROOF
+section3List: >-
+  - ANTI-GRAVITY PROOF
+
+  - ZERO SPILL
+
+  -POCKET PROOF
+featureBlock1: '../images/photos/dabaratus/THE-ULTIMATE-DABBING-APARATUS.png'
+featureBlock2: '../images/photos/dabaratus/Dabaratus-New.png'
 featureArray:
   - alt: CONSISTENT DOSE AT THE PUSH OF A BUTTON
     image: '../images/svg/consistent.svg'
