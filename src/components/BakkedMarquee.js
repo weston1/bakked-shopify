@@ -4,10 +4,10 @@ import Ticker from 'react-ticker'
 import './BakkedMarquee.css'
 
 const BakkedMarquee = () => (
-  <section className="Marquee-Container">
-    <Ticker>
+  <section className="BakkedMarquee">
+    <Ticker speed={2} className="BakkedMarquee--Inner">
       {() => (
-        <div className="Marquee-Inner my-auto">
+        <div className="my-auto BakkedMarquee--Motion">
           <h1>
             <img
               src="../images/svg/crash-test.svg"

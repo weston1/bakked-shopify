@@ -1,12 +1,15 @@
 import React from 'react'
 import { graphql, Link } from 'gatsby'
 import _ from 'lodash'
-import { FiMapPin } from 'react-icons/fi'
-import PageHeader from '../components/PageHeader'
+import { Fade, Slide } from 'react-awesome-reveal'
+import BakkedHeader from '../components/BakkedHeader'
 import PostSection from '../components/PostSection'
 import Content from '../components/Content'
 import Layout from '../components/Layout'
+import ButtonDispensary from '../components/ButtonDispensary'
+import StickerBreaker from '../components/StickerBreaker'
 import FindSection from '../components/FindSection'
+import BakkedMarquee from '../components/BakkedMarquee'
 import StripesMarquee from '../components/StripesMarquee'
 import ExtractTypes from '../components/ExtractTypes'
 
@@ -37,6 +40,8 @@ export const HomePageTemplate = ({
   subtitle,
   featuredImage,
   body,
+  sticker1,
+  sticker2,
   section1,
   sectionTwo,
   sectionTwoImg,
@@ -44,24 +49,33 @@ export const HomePageTemplate = ({
   section3,
   bakkedImg3,
   bakkedImg4,
+  liveResin,
+  liveResinSticker,
+  liveResinTitle,
+  highTerpExtract,
+  highTerpSticker,
+  highTerpTitle,
   posts,
   products
 }) => (
   <main className="Home">
-    <PageHeader
+    <BakkedHeader
       large
       title={title}
       subtitle={subtitle}
       backgroundImage={featuredImage}
+      className="section thick bg-dusty"
     />
 
     <section className="section thick bg-dusty">
-      <div className="container">
-        <Content source={section1} className="col-lg-9 text-center mx-auto" />
-      </div>
+      <Fade>
+        <div className="container">
+          <Content source={section1} className="col-lg-9 text-center mx-auto" />
+        </div>
+      </Fade>
     </section>
 
-    <StripesMarquee />
+    <BakkedMarquee />
 
     <section className="section bg-primary-dusty">
       <div className="bg-product-stripes">
@@ -78,25 +92,26 @@ export const HomePageTemplate = ({
                 <Link to="/products/" className="Button">
                   SEE WHY WE MADE IT
                 </Link>
-                <Link to="/find/" className="Button">
-                  <FiMapPin size="12px" className="title" />
-                  &nbsp; FIND A DISPENSARY
-                </Link>
+                <ButtonDispensary />
               </div>
             </div>
             <div className="col-lg-7 my-auto bg-dots">
-              <img
-                src={sectionTwoImg2}
-                alt={title}
-                className="img-fluid mx-auto text-center"
-              />
+              <Fade direction="up">
+                <img
+                  src={sectionTwoImg2}
+                  alt={title}
+                  className="img-fluid mx-auto text-center"
+                />
+              </Fade>
             </div>
           </div>
         </div>
       </div>
     </section>
 
-    <section className="section bg-primary-dusty">
+    <StickerBreaker sticker1={sticker1} sticker2={sticker2} />
+
+    <section className="section thick bg-primary-dusty">
       <div className="bg-product-stripes-left">
         <div className="container">
           <div className="row">
@@ -127,7 +142,14 @@ export const HomePageTemplate = ({
 
     <section className="section">
       <div className="container">
-        <ExtractTypes />
+        <ExtractTypes
+          liveResin={liveResin}
+          liveResinSticker={liveResinSticker}
+          liveResinTitle={liveResinTitle}
+          highTerpExtract={highTerpExtract}
+          highTerpSticker={highTerpSticker}
+          highTerpTitle={highTerpTitle}
+        />
       </div>
     </section>
 
@@ -198,6 +220,8 @@ export const pageQuery = graphql`
         title
         subtitle
         featuredImage
+        sticker1
+        sticker2
         section1
         sectionTwo
         sectionTwoImg
@@ -205,6 +229,12 @@ export const pageQuery = graphql`
         section3
         bakkedImg3
         bakkedImg4
+        liveResin
+        liveResinSticker
+        liveResinTitle
+        highTerpExtract
+        highTerpSticker
+        highTerpTitle
         accordion {
           title
           content

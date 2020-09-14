@@ -4761,7 +4761,7 @@ class-utils@^0.3.5:
     isobject "^3.0.0"
     static-extend "^0.1.1"
 
-classnames@^2.2.3, classnames@^2.2.5:
+classnames@^2.2.3, classnames@^2.2.5, classnames@^2.2.6:
   version "2.2.6"
   resolved "https://registry.yarnpkg.com/classnames/-/classnames-2.2.6.tgz#43935bffdd291f326dad0a205309b38d00f650ce"
   integrity sha512-JR/iSQOSt+LQIWwrwEzJ9uk0xfN3mTVYMwt1Ir5mUcSN6pU+V4zQFFaJsclJbPuAUQH+yfWef6tm7l1quW3C8Q==
@@ -11282,6 +11282,11 @@ kebab-hash@^0.1.2:
   dependencies:
     lodash.kebabcase "^4.1.1"
 
+keen-slider@^5.2.3:
+  version "5.2.3"
+  resolved "https://registry.yarnpkg.com/keen-slider/-/keen-slider-5.2.3.tgz#cefbe8b93949f67a7e32914bb43275b9a301690d"
+  integrity sha512-aV41QXnzsdHmD1qWF/F7kTxcLwTdFHXLSSv7x3FLS7Y+yxoOKsHsFBmRz1a9TSZ8jTmLPerqJpsvsPL4NGUVmQ==
+
 keyv@3.0.0:
   version "3.0.0"
   resolved "https://registry.yarnpkg.com/keyv/-/keyv-3.0.0.tgz#44923ba39e68b12a7cec7df6c3268c031f2ef373"
@@ -15265,14 +15270,15 @@ react-aria-menubutton@^6.0.0:
     react-display-name "^0.2.4"
     teeny-tap "^0.2.0"
 
-react-awesome-reveal@^3.2.1:
-  version "3.2.1"
-  resolved "https://registry.yarnpkg.com/react-awesome-reveal/-/react-awesome-reveal-3.2.1.tgz#a1c3d876b666c807219c5ceb6eaa4b75a6bb16fb"
-  integrity sha512-/jxX6lTjVyARwOIZBth88G+5Curb9/wEjPRd3QV6FDsgEfkCwZ3z8AStR43uCDqOeKlJq5d5Hzm4dLoXt0Lb6g==
+react-awesome-reveal@^3.3.1:
+  version "3.3.1"
+  resolved "https://registry.yarnpkg.com/react-awesome-reveal/-/react-awesome-reveal-3.3.1.tgz#b263c063f897516630eaa8dcf0b96fc3136706e3"
+  integrity sha512-+BGbNYOzMoUQ1dkhpQeXisnGOWkugGhSZRdrtG8N6nbd15eFdseRIWNM1wTd684W6t/MsFcKP7HWgyUBO10m6A==
   dependencies:
     "@emotion/core" "^10.0.35"
     "@emotion/styled" "^10.0.27"
-    react-intersection-observer "^8.27.1"
+    classnames "^2.2.6"
+    react-intersection-observer "^8.28.4"
     react-is "^16.13.1"
 
 react-circular-progressbar@^2.0.0:
@@ -15481,10 +15487,10 @@ react-input-autosize@^2.2.1:
   dependencies:
     prop-types "^15.5.8"
 
-react-intersection-observer@^8.27.1:
-  version "8.28.3"
-  resolved "https://registry.yarnpkg.com/react-intersection-observer/-/react-intersection-observer-8.28.3.tgz#e98c701095765b093783b8178c57e5575838cd0a"
-  integrity sha512-sy4iiqAHGPHcmTy4Q4JZWrcWbFruIuSHgJriC0oXyHLaf5T7gMjp/o2HvKI2tAgJUUQ4jslKZVwLarGq0iHyeg==
+react-intersection-observer@^8.28.4:
+  version "8.28.5"
+  resolved "https://registry.yarnpkg.com/react-intersection-observer/-/react-intersection-observer-8.28.5.tgz#4c44c42740f7a28cb1b3a7182c74b4f05bbe9b67"
+  integrity sha512-Y5oi1+6b8QBvTTczmOYHEAcQ21AU/at5joZUf8L3cNWwnB5fScV0on5I/PiHczHeq9YGG/abXpkjFvaSJIB0Pg==
 
 react-is@16.12.0:
   version "16.12.0"

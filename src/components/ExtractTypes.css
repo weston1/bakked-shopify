@@ -1,0 +1,6 @@
+.Item--Petri {
+  transition: all 0.3s ease;
+}
+.Item--Petri:hover {
+  transform: rotate(10deg);
+}

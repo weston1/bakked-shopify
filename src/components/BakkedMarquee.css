@@ -1,47 +1,39 @@
 /* Marquee */
-.Marquee-Container {
-  overflow: hidden !important;
+
+.BakkedMarquee {
+  margin: 0 auto;
+  height: 50vh;
+  width: 100vw;
+  z-index: 0;
+  overflow: hidden;
 }
-.Marquee-Inner {
+.ticker {
+  padding-top: 50px;
+  transform: rotate(-3deg) !important;
+  width: 120vw;
+  margin: 50px 0 0 0;
+  left: -20px;
+}
+.BakkedMarquee--Motion {
+  display: inline-block;
+  white-space: nowrap;
+  background: #000;
+  height: 220px;
+}
+.BakkedMarquee--Motion h1 {
   font-family: var(--font-primary);
-  line-height: 2;
-  border-top: 2px solid var(--secondary);
-  border-bottom: 2px solid var(--secondary);
-  transform: rotate(-3deg);
-  padding-top: 2rem;
+  color: #ffffff;
+  font-size: 20rem;
   display: inline-block;
   white-space: nowrap;
   width: 120vw;
   left: -20px;
+  background: #000;
 }
-.Marquee-Inner h1 {
+
+.BakkedMarquee--Inner h1 {
   font-size: 160px;
   line-height: 1.5;
   font-weight: bold;
   color: #ffffff;
-}
-.StripesMarquee {
-  margin: 0 auto;
-  background: rgba(242, 180, 63, 1);
-  transform: rotate(-4deg);
-  z-index: 0;
-  margin-top: -120px;
-}
-.StripesMarquee--Motion {
-  padding-top: 5rem;
-  display: inline-block;
-  white-space: nowrap;
-  width: 120vw;
-  left: -20px;
-  background: repeating-linear-gradient(
-    -70deg,
-    rgba(242, 180, 63, 1),
-    rgba(242, 180, 63, 1) 70px,
-    rgba(0, 0, 0, 0) 70px,
-    rgba(0, 0, 0, 0) 140px
-  );
-  background-color: #000;
-}
-.StripesMarquee--Motion h1 {
-  color: transparent;
 }

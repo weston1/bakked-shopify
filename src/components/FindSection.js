@@ -2,6 +2,7 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import { Link } from 'gatsby'
 
+import ButtonDispensary from './ButtonDispensary'
 import './FindSection.css'
 
 const FindSection = ({ title, className = '' }) => {
@@ -16,9 +17,7 @@ const FindSection = ({ title, className = '' }) => {
             throughout california, Colorado, Oregon, New Mexico, Maine &amp;
             Vermont.
           </p>
-          <Link to="/find/" className="Button mx-auto text-center">
-            FIND A DISPENSARY
-          </Link>
+          <ButtonDispensary />
         </div>
       </div>
     </section>
