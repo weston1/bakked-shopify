@@ -4,6 +4,8 @@ import 'keen-slider/keen-slider.min.css'
 import './Slider.css'
 
 export default props => {
+  const [pause] = React.useState(false)
+  const timer = React.useRef()
   const [currentSlide, setCurrentSlide] = React.useState(0)
 
   const [sliderRef, slider] = useKeenSlider({
@@ -11,8 +13,20 @@ export default props => {
     spacing: 15,
     slideChanged(s) {
       setCurrentSlide(s.details().relativeSlide)
-    }
+    },
+    loop: true
   })
+
+  React.useEffect(() => {
+    timer.current = setInterval(() => {
+      if (!pause && slider) {
+        slider.next()
+      }
+    }, 6000)
+    return () => {
+      clearInterval(timer.current)
+    }
+  }, [pause, slider])
 
   return (
     <>

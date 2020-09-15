@@ -45,10 +45,13 @@ section4: >-
 
   Looking for flavor? Look no further. Live Resin is a full-spectrum, flavor-rich extract that lets you taste every flavor and feel every feeling. Live Resin is made up of terpene fractions and high-potency cannabinoid crystals.
 
+
   Depending on the method used to refine the Live Resin, consistencies and ratios of terpene extract to cannabinoid crystals can vary, from Sauces (larger crystals) to Sugars (finer, sand-like consistency).
 bakkedImg1: '../images/photos/gyro-product.png'
 bakkedImg2: '../images/photos/caution-sticker.jpg'
 bakkedImg3: '../images/photos/precious-cargo.jpg'
+solution1: '../images/photos/gyro/gyro-package.png'
+liveResin: '../images/photos/gyro/live-resin-lockup.png'
 sticker1: '../images/photos/stickers/arrow.png'
 sticker2: '../images/photos/stickers/precious-cargo.jpg'
 sticker3: '../images/photos/stickers/caution-sticker.jpg'

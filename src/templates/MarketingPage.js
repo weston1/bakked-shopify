@@ -8,10 +8,11 @@ import ButtonDispensary from '../components/ButtonDispensary'
 import Slider from '../components/Slider'
 import StickerProductSection from '../components/StickerProductSection'
 import StripesMarquee from '../components/StripesMarquee'
+import SolutionSection from '../components/SolutionSection'
+import FindSection from '../components/FindSection'
 import FooterNote from '../components/FooterNote'
-
 import BackgroundVideo from '../components/BackgroundVideo'
-import { ShoppingCart, AlertCircle } from 'react-feather'
+import { ShoppingCart } from 'react-feather'
 
 // Export Template for use in CMS preview
 export const ProductsPageTemplate = ({
@@ -31,6 +32,8 @@ export const ProductsPageTemplate = ({
   bakkedImg1,
   bakkedImg2,
   bakkedImg3,
+  solution1,
+  liveResin,
   sticker1,
   sticker2,
   sticker3,
@@ -130,29 +133,13 @@ export const ProductsPageTemplate = ({
 
     <StripesMarquee />
 
-    <section className="section bg-primary-dusty">
-      <div className="container row">
-        <div className="col-lg-6">
-          <div className="inline">
-            <AlertCircle />
-            <Content source={section3} className="my-auto text-center-sm" />
-            <Content
-              source={section3Features}
-              className="my-auto text-center-sm"
-            />
-            <Content source={section3List} className="my-auto" />
-          </div>
-          <ButtonDispensary />
-        </div>
-        <div className="col-lg-6">
-          <img
-            src={bakkedImg2}
-            alt={title}
-            className="img-fluid mx-auto text-center"
-          />
-        </div>
-      </div>
-    </section>
+    <SolutionSection
+      title={title}
+      section3={section3}
+      section3List={section3List}
+      section3Features={section3Features}
+      solution1={solution1}
+    />
 
     <section className="section bg-stripes"></section>
 
@@ -160,7 +147,7 @@ export const ProductsPageTemplate = ({
       <div className="container row">
         <div className="col-lg-6">
           <img
-            src={bakkedImg2}
+            src={liveResin}
             alt={title}
             className="img-fluid mx-auto text-center"
           />
@@ -171,6 +158,9 @@ export const ProductsPageTemplate = ({
         </div>
       </div>
     </section>
+
+    <FindSection />
+
     <FooterNote
       footerNote1={footerNote1}
       footerNote2={footerNote2}
@@ -214,6 +204,8 @@ export const pageQuery = graphql`
         bakkedImg1
         bakkedImg2
         bakkedImg3
+        solution1
+        liveResin
         sticker1
         sticker2
         sticker3
