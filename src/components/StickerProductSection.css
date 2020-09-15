@@ -1,0 +1,65 @@
+.StickerProductSection {
+  margin: 0 auto;
+  height: 50vh;
+  width: 100vw;
+  z-index: 0;
+  overflow: hidden;
+  margin-top: -500px;
+}
+.StickerProductSection--Container {
+  padding-top: 50px;
+  transform: rotate(-3deg) !important;
+  width: 120vw;
+  margin: 50px 0 0 0;
+  left: -20px;
+}
+.StickerProductSection--BG {
+  display: inline-block;
+  white-space: nowrap;
+  background: repeating-linear-gradient(
+    -70deg,
+    rgba(242, 180, 63, 1),
+    rgba(242, 180, 63, 1) 70px,
+    rgba(255, 255, 255, 0) 70px,
+    rgba(255, 255, 255, 0) 140px
+  );
+  background-color: transparent;
+  height: 200px;
+  width: 100vw;
+}
+/* Stickers */
+
+.StickerProductSection--header--1 {
+  width: 154px;
+  max-width: 100%;
+  height: auto;
+  overflow: hidden;
+  position: absolute;
+  display: block;
+  left: 100px;
+  margin-top: -40px;
+  z-index: 5;
+}
+.StickerProductSection--header--2 {
+  width: 559px;
+  max-width: 100%;
+  overflow: hidden;
+  height: auto;
+  position: absolute;
+  z-index: 1;
+  display: block;
+  left: 80px;
+  margin-top: -200px;
+  z-index: 5;
+}
+.StickerProductSection--header--3 {
+  width: 225px;
+  max-width: 100%;
+  overflow: hidden;
+  height: auto;
+  position: absolute;
+  display: block;
+  left: 300px;
+  margin-top: -100px;
+  z-index: 5;
+}

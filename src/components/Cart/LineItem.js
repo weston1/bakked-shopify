@@ -30,40 +30,31 @@ const LineItem = props => {
 
   return (
     <>
-      <div className="Cart container row bg-dusty">
-        <div className="col-lg-6 Thumbnail--Section">
-          <span className="Cart--Thumbnail my-auto">
-            <img
-              src="../../images/photos/gyro-no-bg.png"
-              className="test-img"
-            />
-          </span>
-
-          <span className="Cart--Thumbnail my-auto">{variantImage}</span>
-        </div>
-        <div className="col-lg-6">
-          <div className="row">
-            <div className="col-lg-2">{line_item.title}</div>
-            <div className="col-lg-2">
-              {line_item.variant.selectedOptions[0].value}
-            </div>
-            <div className="col-lg-2">{line_item.quantity}</div>
-            <div className="col-lg-2">${line_item.variant.price}</div>
-            <div className="col-lg-2">
-              ${line_item.quantity * line_item.variant.price}
-            </div>
-            <div className="col-lg-2">
-              <button
-                className=""
-                style={{
-                  background: 'var(--secondary)',
-                  color: '#ffffff'
-                }}
-                onClick={handleRemove}
-              >
-                Remove
-              </button>
-            </div>
+      <div className="Cart container row">
+        <div className="row">
+          <div className="col-lg-2 Thumbnail--Section">
+            <span className="Cart--Thumbnail my-auto">{variantImage}</span>
+          </div>
+          <div className="col-lg-2">{line_item.title}</div>
+          <div className="col-lg-2">
+            {line_item.variant.selectedOptions[0].value}
+          </div>
+          <div className="col-lg-2">{line_item.quantity}</div>
+          <div className="col-lg-2">${line_item.variant.price}</div>
+          <div className="col-lg-2">
+            ${line_item.quantity * line_item.variant.price}
+          </div>
+          <div className="col-lg-2">
+            <button
+              className=""
+              style={{
+                background: 'var(--secondary)',
+                color: '#ffffff'
+              }}
+              onClick={handleRemove}
+            >
+              Remove
+            </button>
           </div>
         </div>
       </div>

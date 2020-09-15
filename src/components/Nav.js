@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import { Location } from '@reach/router'
 import { Link } from 'gatsby'
-import { Menu, X, MapPin } from 'react-feather'
+import { FiMenu, FiX, FiMapPin, FiShoppingCart } from 'react-icons/fi'
 import Logo from './Logo'
 
 import './Nav.scss'
@@ -53,15 +53,19 @@ export class Navigation extends Component {
             <NavLink to="/find/">Find Us</NavLink>
             <NavLink to="/retailer/">Future Retailer</NavLink>
             <NavLink to="/contact/">Support/Contact</NavLink>
+            <NavLink to="/cart/">
+              {' '}
+              <FiShoppingCart size="4rem" />
+            </NavLink>
           </div>
           <Link to="/find/" className="Button--locator my-auto">
-            <MapPin size="20px" />
+            <FiMapPin size="20px" />
             <span className="d-none d-md-block d-lg-block">
               &nbsp;STORE LOCATOR
             </span>
           </Link>
           <button className="Nav--MenuButton" onClick={this.handleMenuToggle}>
-            {active ? <X size="3rem" /> : <Menu size="3rem" className="" />}
+            {active ? <FiX size="3rem" /> : <FiMenu size="3rem" className="" />}
           </button>
         </div>
       </nav>

@@ -53,7 +53,7 @@ const Cart = () => {
           <div className="col-lg-2">&nbsp;</div>
           <div className="col-lg-2">&nbsp;</div>
           <div className="col-lg-2">&nbsp;</div>
-          <div className="col-lg-2">
+          <div className="col-lg-12">
             <h2 className="Cart--Subtotal">Subtotal</h2>
           </div>
           <div className="col-lg-2">${checkout.subtotalPrice}</div>
@@ -65,22 +65,23 @@ const Cart = () => {
           <div className="col-lg-2">&nbsp;</div>
           <div className="col-lg-2">&nbsp;</div>
           <div className="col-lg-2">&nbsp;</div>
-          <div className="col-lg-2">
+          <div className="col-lg-6">
             <h2>Total</h2>
           </div>
-          <div className="col-lg-12">${checkout.totalPrice}</div>
-          <div className="col-lg-12">&nbsp;</div>
+          <div className="col-lg-6">${checkout.totalPrice}</div>
+          <div className="col-lg-6">&nbsp;</div>
+        </div>
+        <div className="col-lg-12 mx-auto">
+          <button
+            className="Button Cart--Checkout"
+            style={{ background: 'var(--secondary)' }}
+            onClick={handleCheckout}
+            disabled={checkout.lineItems.length === 0}
+          >
+            Check out
+          </button>
         </div>
       </div>
-
-      <button
-        className="Button Cart--Checkout"
-        style={{ background: 'var(--secondary)' }}
-        onClick={handleCheckout}
-        disabled={checkout.lineItems.length === 0}
-      >
-        Check out
-      </button>
     </div>
   )
 }

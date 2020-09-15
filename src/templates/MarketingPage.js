@@ -5,8 +5,9 @@ import Content from '../components/Content.js'
 import Layout from '../components/Layout.js'
 import Image from '../components/Image'
 import ButtonDispensary from '../components/ButtonDispensary'
+import Slider from '../components/Slider'
+import StickerProductSection from '../components/StickerProductSection'
 import StripesMarquee from '../components/StripesMarquee'
-
 import FooterNote from '../components/FooterNote'
 
 import BackgroundVideo from '../components/BackgroundVideo'
@@ -33,6 +34,8 @@ export const ProductsPageTemplate = ({
   sticker1,
   sticker2,
   sticker3,
+  sticker4,
+  sticker5,
   featureBlock1,
   featureBlock2,
   footerNote1,
@@ -57,6 +60,7 @@ export const ProductsPageTemplate = ({
               &nbsp; BUY AN EMPTY GYRO
             </button>
           </div>
+
           <div className="col-lg-6">
             <img
               src={featureBlock1}
@@ -64,11 +68,16 @@ export const ProductsPageTemplate = ({
               className="img-fluid mx-auto text-center featureProduct"
             />
           </div>
+
+          <StickerProductSection
+            sticker1={sticker1}
+            sticker2={sticker2}
+            sticker3={sticker3}
+          />
         </div>
       </div>
     </section>
 
-    <StripesMarquee />
     <div className="container">
       {sticker1 && <Image src={sticker1} alt={title} size="10px" />}
       <Image src={sticker2} alt={title} size="50px" />
@@ -83,32 +92,25 @@ export const ProductsPageTemplate = ({
       </div>
     </section>
 
+    <StickerProductSection
+      sticker1={sticker1}
+      sticker2={sticker2}
+      sticker3={sticker3}
+    />
+
     <section className="section">
       <div className="col-lg-12">
         <small>TEST 4.12C</small>
         <h2>{sliderTagline}</h2>
       </div>
-      <div className="row">
-        <div className="col-6">
-          <img
-            src="../../images/photos/slider-placeholder.jpg"
-            alt={title}
-            className="img-fluid mx-auto text-center"
-          />
-          Group A is given a standard dab container and asked to walk around
-          with it on their person for the entire day and to report back.
-        </div>
-        <div className="col-6">
-          <img
-            src="../../images/photos/slider-placeholder.jpg"
-            alt={title}
-            className="img-fluid mx-auto text-center"
-          />
-          Group B is given a container full of concentrate anchored with a
-          gyroscoping base and asked to walk around with it all day.
-        </div>
-      </div>
+      <Slider />
     </section>
+
+    <StickerProductSection
+      sticker3={sticker3}
+      sticker4={sticker4}
+      sticker5={sticker5}
+    />
 
     <section className="section">
       <div className="container col-lg-10 text-center">
@@ -205,6 +207,8 @@ export const pageQuery = graphql`
         sticker1
         sticker2
         sticker3
+        sticker4
+        sticker5
         featureBlock1
         featureBlock2
         footerNote1

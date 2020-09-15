@@ -16,14 +16,15 @@ const ProductPage = ({ data }) => {
   return (
     <Layout title={product.title || false}>
       <article
-        className="SingleService section light"
+        className="SingleService section bg-dusty"
         itemScope
         itemType="http://schema.org/BlogPosting"
       >
-        <div className="container skinny">
-          <div className="SingleService--Content relative">
+        <div className="container row">
+          <div className="col-lg-6 my-auto">
             <ProductGalleryThumbnails productimages={product.images} />
-
+          </div>
+          <div className="SingleService--Content relative col-lg-6">
             {product.title && (
               <h1 className="SingleService--Title" itemProp="title">
                 {product.title}
@@ -31,10 +32,10 @@ const ProductPage = ({ data }) => {
             )}
 
             <div className="SingleService--InnerContent">
-              <ProductForm product={product} />
               <div
                 dangerouslySetInnerHTML={{ __html: product.descriptionHtml }}
               />
+              <ProductForm product={product} />
             </div>
 
             <div className="SingleService--Pagination">

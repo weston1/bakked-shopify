@@ -26,6 +26,9 @@ bakkedImg4: '../images/photos/stickers/dabaratus-label.png'
 icon: '../images/photos/svg/crash-test.svg'
 sticker1: '../images/photos/stickers/arrow.png'
 sticker2: '../images/photos/stickers/fully-activated-high-thc-cannabis.png'
+sticker3: '../images/photos/stickers/fully-activated-high-thc-cannabis.png'
+sticker4: '../images/photos/stickers/fully-activated-high-thc-cannabis.png'
+sticker5: '../images/photos/stickers/fully-activated-high-thc-cannabis.png'
 section3: >-
   The name says it all - the ultimate dabbing apparatus, that you can ooze anywhere. This swiss-army knife of dabbing that can be used to top a bowl, line a blunt, dress a joint or dab directly onto a nail. Just click, apply & cap to **#SeshWithoutTheMess**.
 video: '../video/bakkedvid540.mp4'

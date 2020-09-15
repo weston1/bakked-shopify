@@ -1,9 +1,10 @@
 .SingleService {
-  background: white;
+  background: transparent;
 }
 
 .SingleService .gatsby-image-wrapper {
   margin: 1em 1em 1em 1em;
+  border-radius: 12px;
 }
 
 .SingleService--BackButton {
@@ -28,7 +29,7 @@
 }
 
 .SingleService--Content {
-  background: white;
+  background: transparent;
   padding: 8rem 8rem 4rem 8rem;
 }
 
@@ -41,7 +42,7 @@
 .SingleService--Meta {
   font-size: 1rem;
   margin: 0 0 2rem 0;
-  text-align: center;
+  text-align: left;
 }
 
 .SingleService--Meta > * + * {
@@ -55,11 +56,11 @@
 .SingleService--Title {
   text-align: left;
   line-height: 1.2;
-  font-family: 'Inconsolata', monospace;
+  font-family: var(--font-secondary);
 }
 
 .SingleService--InnerContent {
-  padding: 0 8rem;
+  text-align: left;
 }
 
 @media screen and (max-width: 750px) {
@@ -70,8 +71,7 @@
 
 .SingleService--Pagination {
   margin: 4rem 0 0 0;
-  display: flex;
-  align-items: center;
+  display: inline-block;
   justify-content: space-between;
 }
 
