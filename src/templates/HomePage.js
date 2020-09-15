@@ -1,7 +1,7 @@
 import React from 'react'
 import { graphql, Link } from 'gatsby'
 import _ from 'lodash'
-import { Fade, Slide } from 'react-awesome-reveal'
+import { Fade } from 'react-awesome-reveal'
 import BakkedHeader from '../components/BakkedHeader'
 import PostSection from '../components/PostSection'
 import Content from '../components/Content'
@@ -87,8 +87,8 @@ export const HomePageTemplate = ({
                 alt={title}
                 className="img-fluid mx-auto py-4 text-center"
               />
-              <Content source={sectionTwo} className="text-left" />
-              <div className="Button-block">
+              <Content source={sectionTwo} className="text-left py-4" />
+              <div className="Button-block col-sm-10 mx-auto">
                 <Link to="/products/" className="Button">
                   SEE WHY WE MADE IT
                 </Link>
@@ -115,6 +115,17 @@ export const HomePageTemplate = ({
       <div className="bg-product-stripes-left">
         <div className="container">
           <div className="row">
+            <div className="col-lg-4 my-auto d-block d-md-none d-lg-none p-3">
+              <img
+                src={bakkedImg4}
+                alt={title}
+                className="img-fluid mx-auto text-center py-5"
+              />
+              <Content source={section3} />
+              <Link to="/products" className="Button">
+                SEE WHY WE MADE IT
+              </Link>
+            </div>
             <div className="col-lg-6 mx-auto py-5 bg-dots-left">
               <img
                 src={bakkedImg3}
@@ -122,7 +133,7 @@ export const HomePageTemplate = ({
                 className="img-fluid mx-auto text-center"
               />
             </div>
-            <div className="col-lg-4 my-auto">
+            <div className="col-lg-4 my-auto d-none d-md-block d-lg-block">
               <img
                 src={bakkedImg4}
                 alt={title}
@@ -169,19 +180,21 @@ export const HomePageTemplate = ({
         </div>
       </section>
     )}
-
-    <FindSection />
-
-    <FormSignUp />
-
-    {!!posts.length && (
-      <section className="section">
-        <div className="container">
-          <PostSection title="Bakked News" posts={posts} />
-        </div>
-      </section>
-    )}
-
+    <Fade>
+      <FindSection />
+    </Fade>
+    <Fade>
+      <FormSignUp />
+    </Fade>
+    <Fade>
+      {!!posts.length && (
+        <section className="section">
+          <div className="container">
+            <PostSection title="Bakked News" posts={posts} />
+          </div>
+        </section>
+      )}
+    </Fade>
     <InstagramSection />
   </main>
 )

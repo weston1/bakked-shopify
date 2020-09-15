@@ -54,24 +54,16 @@ export default () => (
               />
             </div>
           </div>
-          <div className="AgeGate--Input container row">
-            <div className="col-lg-2">
-              <img
-                src="../images/svg/crash-test.svg"
-                alt="Bakked Extracts"
-                className="img-fluid my-auto"
-                width="100px"
-              />
-            </div>
-          </div>
           <div className="row container">
             <div className="col-lg-12 text-center my-auto AgeGate--Copy">
+              <br />
               <p>
                 BY CONTINUING TO USE THIS SITE YOU ACKNOWLEDGE OUR PRIVACY
                 POLICY AND USE OF COOKIES.
               </p>
             </div>
           </div>
+          <div className="buttonClasses-0 container"></div>
         </div>
       </div>
     </Fade>

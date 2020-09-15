@@ -49,11 +49,14 @@ export const ProductsPageTemplate = ({
       </BackgroundVideo>
     </section>
 
-    <section className="section Product--Header bg-dusty">
+    <section className="section thick Product--Header bg-dusty">
       <div className="container">
         <div className="row">
           <div className="col-lg-6">
-            <Content source={section1} className="product-list" />
+            <Content
+              source={section1}
+              className="product-list text-center-sm"
+            />
             <ButtonDispensary />
             <button className="Button">
               <ShoppingCart />
@@ -85,7 +88,11 @@ export const ProductsPageTemplate = ({
 
     <section className="section">
       <div className="container col-lg-10 text-center">
-        <img alt="Bakked Sticker 1" src="../images/svg/test-symbol.svg" />
+        <img
+          alt="Bakked Sticker 1"
+          src="../images/svg/test-symbol.svg"
+          className="icon"
+        />
       </div>
       <div className="container text-center">
         <Content source={section2} className="col-lg-8  mx-auto" />
@@ -128,8 +135,11 @@ export const ProductsPageTemplate = ({
         <div className="col-lg-6">
           <div className="inline">
             <AlertCircle />
-            <Content source={section3} className="my-auto" />
-            <Content source={section3Features} className="my-auto" />
+            <Content source={section3} className="my-auto text-center-sm" />
+            <Content
+              source={section3Features}
+              className="my-auto text-center-sm"
+            />
             <Content source={section3List} className="my-auto" />
           </div>
           <ButtonDispensary />

@@ -26,7 +26,9 @@ const FooterNote = ({ title, footerNote1, footerNote2, partnerProduct }) => {
           )}
           <div className="container relative">
             <div className="col-lg-12 mr-auto my-auto">
-              <Link className="Button">The {partnerProduct}</Link>
+              <Link className="FooterNote--Button Button">
+                The {partnerProduct}
+              </Link>
             </div>
           </div>
         </div>
@@ -41,7 +43,7 @@ const FooterNote = ({ title, footerNote1, footerNote2, partnerProduct }) => {
             />
           )}
           <div className="container relative col-lg-5 mx-auto">
-            <Link className="Button">Our Oil</Link>
+            <Link className="FooterNote--Button Button">Our Oil</Link>
           </div>
         </div>
       </div>

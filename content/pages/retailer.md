@@ -10,3 +10,5 @@ meta:
   description: Interested in becoming a future reailer?
   title: Retailer
 ---
+
+If you are located in California, Colorado or Oregon you can order Bakked directly through Leaflink

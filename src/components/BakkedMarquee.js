@@ -5,17 +5,19 @@ import './BakkedMarquee.css'
 
 const BakkedMarquee = () => (
   <section className="BakkedMarquee">
-    <Ticker speed={2} className="BakkedMarquee--Inner">
+    <Ticker speed={5} className="BakkedMarquee--Inner">
       {() => (
-        <div className="my-auto BakkedMarquee--Motion">
-          <h1>
+        <>
+          <div className="my-auto BakkedMarquee--Motion">
             <img
               src="../images/svg/crash-test.svg"
               alt="BAKKED EXTRACTS CANNABIS TESTING"
-            />{' '}
-            LET'S #GET BAKKED
-          </h1>
-        </div>
+              className="BakkedMarquee--Icon"
+            />
+            <h1>LET'S #GET BAKKED</h1>
+          </div>
+          <div className="section blend--bg"></div>
+        </>
       )}
     </Ticker>
   </section>

@@ -1232,6 +1232,10 @@ ul {
   max-width: 100%;
   height: auto;
 }
+.icon {
+  max-width: 100px;
+  padding: 4rem 0;
+}
 .imgFeature {
   box-shadow: 10px 5px 5px rgba(50, 50, 93, 0.11), 0 1px 3px rgba(0, 0, 0, 0.08);
   transition: transform 0.3s;
@@ -1595,11 +1599,27 @@ blockquote {
 }
 .bg-Goo {
   background: url('../../static/images/bg/Goo-BG.jpg');
-  background-size: 100vw;
+  background-size: 100vw 100%;
   background-position: top center;
   background-repeat: no-repeat;
   min-height: 500px;
 }
+
+@media (max-width: 768px) {
+  .bg-product-stripes {
+    background: url('../../static/images/svg/product-stripes.svg'), transparent;
+    background-size: 150vw 50vh;
+    background-position: -30% 100%;
+    background-repeat: no-repeat;
+  }
+  .bg-product-stripes-left {
+    background: url('../../static/images/svg/product-stripes.svg'), transparent;
+    background-size: 150vw 30vh;
+    background-position: 10% 75%;
+    background-repeat: no-repeat;
+  }
+}
+
 /* Product Page */
 .Product--Header {
   z-index: 2;
@@ -1618,7 +1638,16 @@ blockquote {
   border-bottom: solid 2px #000;
   width: 300px;
 }
+/* Find Page */
 
+.Find-Card-Overlay {
+  margin-top: -300px;
+}
+.Find-Card {
+  background: white;
+  box-shadow: 10px 5px 5px rgba(50, 50, 93, 0.11), 0 1px 3px rgba(0, 0, 0, 0.08);
+  border-radius: var(--borderRadius);
+}
 /* Marquee */
 
 .Overflow--Container {

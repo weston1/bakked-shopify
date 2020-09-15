@@ -17,3 +17,8 @@
 .FooterNote--Image:hover {
   background-size: 120%;
 }
+.FooterNote--Button {
+  display: block;
+  position: relative;
+  top: 225px;
+}

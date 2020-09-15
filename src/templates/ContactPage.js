@@ -13,7 +13,6 @@ import InstagramSection from '../components/InstagramSection'
 
 // Export Template for use in CMS preview
 export const ContactPageTemplate = ({
-  body,
   title,
   subtitle,
   featuredImage,

@@ -20,7 +20,7 @@ const ExtractTypes = ({
       <div className="container col-lg-10 mx-auto text-center">
         <h2 className="ExtractTypes--Title">Extract Types</h2>
         <div className="container row">
-          <div className="col-lg-6">
+          <div className="col-lg-6 py-3">
             {liveResin && (
               <div className="relative">
                 <Image
@@ -40,7 +40,7 @@ const ExtractTypes = ({
             </div>
             <p>{liveResinTitle}</p>
           </div>
-          <div className="col-lg-6">
+          <div className="col-lg-6 py-3">
             {highTerpExtract && (
               <div className="relative">
                 <Image

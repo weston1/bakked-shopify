@@ -18,7 +18,7 @@ liveResin: '../images/photos/live-resin.png'
 liveResinSticker: '../images/photos/stickers/live-resin.png'
 liveResinTitle: available in the GYRO
 highTerpExtract: '../images/photos/high-terpene-extract.png'
-highTerpSticker: '../images/photos/stickers/live-resin.png'
+highTerpSticker: '../images/photos/stickers/high-terpene-extract.png'
 highTerpTitle: available in the DABARATUS
 bakkedImg1: '../images/photos/stickers/gyro-label.png'
 bakkedImg3: '../images/photos/dabaratus/dabaratus-new.png'

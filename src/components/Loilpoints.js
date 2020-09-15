@@ -8,7 +8,7 @@ let loilpointsImg = '../../images/photos/loilpoints.jpg'
 
 const Loilpoints = ({ title, loilpointsImg, className = '' }) => {
   return (
-    <section className="Loilpoints section">
+    <section className="Loilpoints section thick">
       <div className="container mx-auto">
         <div className="row">
           <div className="col-lg-6">

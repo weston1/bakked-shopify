@@ -4,3 +4,10 @@
 .Item--Petri:hover {
   transform: rotate(10deg);
 }
+.FeatureArray--Sticker--Container {
+  margin-top: -40px;
+  z-index: 0;
+}
+.FeatureArray--Sticker {
+  max-height: 70px;
+}

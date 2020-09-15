@@ -102,10 +102,7 @@ export default () => (
               <Link to="/privacy">Terms &amp; Conditions</Link>
             </li>
             <li>
-              <Link>Terms &amp; Conditions</Link>
-            </li>
-            <li>
-              <Link>Privacy Policy</Link>
+              <Link to="/privacy">Privacy Policy</Link>
             </li>
             <li>
               <span>© {new Date().getFullYear()} Bakked.</span>
@@ -113,13 +110,27 @@ export default () => (
           </div>
           <div className="col-lg-6 footer-credits">
             <li>
-              <Instagram />
+              <a
+                href="https://instagram.com/bakked_solutions"
+                alt="Instagram Bakked Extracts"
+                target="_blank"
+              >
+                <Instagram />
+              </a>
             </li>
             <li>
-              <Facebook />
+              <a
+                href="https://facebook.com/bakked_solutions"
+                alt="Instagram Bakked Extracts"
+                target="_blank"
+              >
+                <Facebook />
+              </a>
             </li>
             <li>
-              <MessageCircle />
+              <Link to="/contact">
+                <MessageCircle />
+              </Link>
             </li>
             <li>
               <img

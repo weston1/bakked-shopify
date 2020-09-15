@@ -2,10 +2,14 @@
 
 .BakkedMarquee {
   margin: 0 auto;
-  height: 50vh;
+  height: 350px;
   width: 100vw;
   z-index: 0;
   overflow: hidden;
+}
+.blend--bg {
+  background: var(--primary);
+  height: 200px;
 }
 .ticker {
   padding-top: 50px;
@@ -26,14 +30,37 @@
   font-size: 20rem;
   display: inline-block;
   white-space: nowrap;
-  width: 120vw;
+  width: 200%;
   left: -20px;
   background: #000;
 }
-
-.BakkedMarquee--Inner h1 {
-  font-size: 160px;
-  line-height: 1.5;
-  font-weight: bold;
-  color: #ffffff;
+.BakkedMarquee--Icon {
+  width: 200px;
+  height: 200px;
+  padding: 0 2rem;
+  vertical-align: top;
+  display: inline-block;
+  justify-content: center;
+  align-items: center;
+}
+@media (max-width: 768px) {
+  .BakkedMarquee {
+    height: 30vh;
+  }
+  .BakkedMarquee--Motion {
+    height: 120px;
+  }
+  .BakkedMarquee--Motion h1 {
+    font-size: 7rem;
+    line-height: 2;
+  }
+  .BakkedMarquee--Icon {
+    width: 120px;
+    height: 120px;
+    padding: 2rem;
+    vertical-align: middle;
+    display: inline-block;
+    justify-content: center;
+    align-items: center;
+  }
 }

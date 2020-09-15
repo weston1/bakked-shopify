@@ -21,7 +21,7 @@ const StickerProductSection = ({
           <Image
             src={sticker2}
             alt="Bakked Extracts - REPLACE"
-            className="StickerProductSection--header--1"
+            className="StickerProductSection--sticker--1"
           />
           <Image
             src={sticker1}
@@ -31,12 +31,17 @@ const StickerProductSection = ({
           <Image
             src={sticker3}
             alt="Bakked Extracts - REPLACE"
-            className="StickerProductSection--header--3"
+            className="StickerProductSection--sticker--3"
           />
           <Image
             src={sticker4}
             alt="Replace"
-            className="StickerProductSection--sticker--3"
+            className="StickerProductSection--sticker--4"
+          />
+          <Image
+            src={sticker4}
+            alt="Replace"
+            className="StickerProductSection--sticker--5"
           />
         </div>
       </div>
