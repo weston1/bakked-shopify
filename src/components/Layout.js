@@ -59,6 +59,12 @@ export default ({ children, meta, title }) => {
                 />
                 <link rel="dns-prefetch" href="https://ucarecdn.com" />
                 {/* Add font link tags here */}
+
+                <script
+                  async
+                  type="text/javascript"
+                  src="https://static.klaviyo.com/onsite/js/klaviyo.js?company_id=Vx2CPp"
+                ></script>
               </Helmet>
 
               {/* AgeGate */}

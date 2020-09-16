@@ -1,6 +1,6 @@
 ---
 template: BlogIndex
 title: News
-subtitle: 'a news category'
-featuredImage: ''
+subtitle: 'Bakked News'
+featuredImage: '../../images/bg/AgeGate-BG.jpg'
 ---
