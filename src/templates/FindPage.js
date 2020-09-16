@@ -2,7 +2,6 @@ import React from 'react'
 // import { MapPin, Smartphone, Mail } from 'react-feather'
 import { graphql } from 'gatsby'
 
-import FindHeader from '../components/FindHeader'
 import Content from '../components/Content'
 import Layout from '../components/Layout'
 import StripesMarquee from '../components/StripesMarquee'
@@ -14,12 +13,6 @@ import InstagramSection from '../components/InstagramSection'
 // < Mapbox / > USE FOR MAPBOX PLUGIN
 export const FindPageTemplate = ({ title, subtitle, featuredImage, body }) => (
   <main className="Contact">
-    <FindHeader
-      title={title}
-      subtitle={subtitle}
-      backgroundImage={featuredImage}
-    />
-
     <StripesMarquee />
     <section className="Find-Card-Overlay">
       <div className="container">
