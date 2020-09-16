@@ -1,7 +1,5 @@
 import React from 'react'
-import PropTypes from 'prop-types'
 import { Link } from 'gatsby'
-import Content from './Content'
 import Image from './Image'
 
 import './ExtractTypes.css'

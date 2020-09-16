@@ -1,10 +1,7 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import Image from './Image'
 
 import './Loilpoints.css'
-
-let loilpointsImg = '../../images/photos/loilpoints.jpg'
 
 const Loilpoints = ({ title, loilpointsImg, className = '' }) => {
   return (

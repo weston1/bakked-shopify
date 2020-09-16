@@ -8,7 +8,7 @@ require('dotenv').config({
 module.exports = {
   siteMetadata: {
     title: 'Bakked',
-    description: 'the shopify + gatsby starter theme for digital commerce',
+    description: 'High Quality Cannabis Extracts',
     siteUrl: 'https://bakked.com'
   },
   plugins: [

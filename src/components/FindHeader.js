@@ -3,7 +3,6 @@ import PropTypes from 'prop-types'
 
 import Image from './Image'
 import Content from './Content'
-import FormMini from './FormMini'
 import './FindHeader.css'
 
 const FindHeader = ({

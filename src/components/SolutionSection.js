@@ -1,7 +1,6 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import Content from './Content'
-import Image from './Image'
 import { AlertCircle } from 'react-feather'
 import ButtonDispensary from './ButtonDispensary'
 

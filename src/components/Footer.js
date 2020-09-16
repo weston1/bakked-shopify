@@ -114,6 +114,7 @@ export default () => (
                 href="https://instagram.com/bakked_solutions"
                 alt="Instagram Bakked Extracts"
                 target="_blank"
+                rel="noopener noreferrer"
               >
                 <Instagram />
               </a>
@@ -123,6 +124,7 @@ export default () => (
                 href="https://facebook.com/bakked_solutions"
                 alt="Instagram Bakked Extracts"
                 target="_blank"
+                rel="noopener noreferrer"
               >
                 <Facebook />
               </a>
