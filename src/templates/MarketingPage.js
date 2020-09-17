@@ -128,6 +128,7 @@ export const ProductsPageTemplate = ({
       sticker3={sticker3}
       sticker4={sticker4}
     />
+
     <div className="ProductPage--StripesMarquee">
       <StripesMarquee />
     </div>

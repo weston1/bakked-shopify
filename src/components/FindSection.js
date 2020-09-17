@@ -6,7 +6,7 @@ import './FindSection.css'
 
 const FindSection = ({ title, className = '' }) => {
   return (
-    <section className="bg-dusty">
+    <section className="section bg-dusty">
       <div className="FindSection">
         <div className="container col-lg-10 mx-auto text-center">
           <h2 className="FindSection--Title">

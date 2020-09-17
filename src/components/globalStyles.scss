@@ -1354,7 +1354,9 @@ blockquote {
 .section.noPadding {
   padding: 0;
 }
-
+.Spacer {
+  padding: 10rem 0;
+}
 @media (max-width: 600px) {
   .section {
     width: 100%;

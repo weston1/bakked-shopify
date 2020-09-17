@@ -13,7 +13,7 @@ const images = [
 
 export default props => {
   const [opacities, setOpacities] = React.useState([])
-  const [pause, setPause] = React.useState(false)
+  const [pause] = React.useState(false)
   const timer = React.useRef()
   const [sliderRef, slider] = useKeenSlider({
     slides: images.length,
@@ -45,7 +45,10 @@ export default props => {
             className="fader__slide"
             style={{ opacity: opacities[idx] }}
           >
-            <img src={src} />
+            <img
+              src={src}
+              alt="Bakked Extracts - High Quality Cannabis Extracts"
+            />
           </div>
         ))}
       </div>
@@ -54,21 +57,21 @@ export default props => {
           <img
             src="../images/photos/stickers/arrow.png"
             className="sticker-header-1"
-            alt="REPLACE"
+            alt="Bakked Extracts - Down Arrow"
           />
         </div>
         <div className="">
           <img
             src="../images/photos/stickers/sit-back-get-bakked.png"
             className="sticker-header-2"
-            alt="REPLACE"
+            alt="Bakked Extracts - Sit Back Get Bakked"
           />
         </div>
         <div className="">
           <img
             src="../images/photos/stickers/fully-activated-high-thc-cannabis.png"
             className="sticker sticker-header-3"
-            alt="REPLACE"
+            alt="Bakked Extracts - Fully Activated High THC Cannabis"
           />
         </div>
       </div>

@@ -75,11 +75,13 @@ export const HomePageTemplate = ({
       </Fade>
     </section>
 
-    <BakkedMarquee />
+    <div className="ProductPage--StripesMarquee">
+      <BakkedMarquee />
+    </div>
 
     <section className="section bg-primary-dusty">
       <div className="bg-product-stripes">
-        <div className="container">
+        <div className="container Spacer">
           <div className="row col-lg-12 mx-auto">
             <div className="col-lg-5 p-3">
               <Fade>
@@ -109,11 +111,13 @@ export const HomePageTemplate = ({
       </div>
     </section>
 
-    <StickerBreaker sticker1={sticker1} sticker2={sticker2} />
+    <div className="ProductPage--StripesMarquee">
+      <StickerBreaker sticker1={sticker1} sticker2={sticker2} />
+    </div>
 
     <section className="section thick bg-primary-dusty">
       <div className="bg-product-stripes-left">
-        <div className="container">
+        <div className="container Spacer">
           <div className="row">
             <div className="col-lg-6 my-auto d-block d-md-none d-lg-none p-3">
               <Fade>
@@ -153,7 +157,9 @@ export const HomePageTemplate = ({
       </div>
     </section>
 
-    <StripesMarquee />
+    <div className="ProductPage--BakkedMarquee">
+      <StripesMarquee />
+    </div>
 
     <section className="section">
       <div className="container">

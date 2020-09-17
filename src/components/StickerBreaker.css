@@ -1,11 +1,16 @@
 .StickerBreaker {
   padding-top: 50px;
   height: 200px;
+  position: relative;
+  margin: 0 auto;
 }
 .StickerBreaker--line {
-  width: 90vw;
+  width: 100%;
+  max-width: 80vw;
+  margin: 0 auto;
   height: 2px;
   background: #fff;
+  z-index: 1;
 }
 .StickerBreaker--sticker1 {
   position: absolute;
@@ -18,7 +23,7 @@
 .StickerBreaker--sticker2 {
   position: absolute;
   display: block;
-  z-index: 1;
+  z-index: 0;
   margin-top: 20px;
   left: 20%;
   width: 125px;

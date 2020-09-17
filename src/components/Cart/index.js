@@ -1,6 +1,5 @@
 import React, { useContext } from 'react'
 
-import Layout from '../../components/Layout'
 import StoreContext from '../../context/StoreContext'
 import LineItem from './LineItem'
 import './Cart.css'
