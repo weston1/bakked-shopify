@@ -60,9 +60,10 @@ export const ProductsPageTemplate = ({
       <div className="container">
         <div className="row">
           <div className="Product--Title">
+            <Content source={section1} className="text-center-sm" />
             <Content
-              source={section1}
-              className="product-list text-center-sm"
+              source={section3List}
+              className="Product--Feature--List text-center-sm"
             />
             <ButtonDispensary />
             <button className="Button">

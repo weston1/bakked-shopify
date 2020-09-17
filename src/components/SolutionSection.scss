@@ -4,6 +4,15 @@
   background-color: #000 !important;
   margin: 2rem 0;
 }
+.small-text {
+  font-family: var(--font-secondary);
+}
+.Solution-Barcode {
+  transform: rotate(90deg);
+  position: relative;
+  left: 90%;
+  bottom: 300px;
+}
 .solution1 {
   width: 350px;
   display: block;
@@ -33,13 +42,16 @@
 }
 .Solution--Feature--List ul {
   list-style: none;
-  padding-left: 1em;
   width: 100%;
   display: inline;
+  font-family: var(--font-secondary);
 }
 .Solution--Feature--List li {
+  line-height: 2;
   border-bottom: solid 2px #000;
-
+  width: 100%;
+  display: inline-flex;
+  vertical-align: middle;
   &:before {
     content: '';
     display: inline-block;
@@ -49,6 +61,16 @@
     background-image: url('../../static/images/svg/check-approved.svg');
     background-size: contain;
     background-repeat: no-repeat;
+    margin-top: 1rem;
+    margin: 1rem;
     margin-right: 0.5em;
   }
+}
+.Solution--Feature--List li p {
+  margin-top: 1rem;
+  margin: 1rem;
+  font-family: var(--font-secondary);
+  font-size: 25px;
+  letter-spacing: -0.93px;
+  line-height: 2;
 }

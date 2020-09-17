@@ -31,26 +31,28 @@ const SolutionSection = ({
                 source={section3Features}
                 className="my-auto text-center-sm Solution--Feature--List"
               />
-              <Content source={section3List} className="my-auto" />
             </div>
           </div>
           <ButtonDispensary />
           <div>
             <div className="breaker"></div>
-            <small>
-              The {title}
-              <br />
-              Innovation 4.20
-            </small>
-          </div>
-          <img
-            src="../images/svg/product-barcode.svg"
-            alt="Bakked Barcode"
-            className="img-fluid py-5"
-          />
-
-          <div>
-            <small>BAKKED R&amp;D #Seshwithoutthemess</small>
+            <div className="container row">
+              <div className="col-6">
+                {' '}
+                <small className="small-text">
+                  The {title}
+                  <br />
+                  Innovation 4.20
+                </small>
+              </div>
+              <div className="col-6">
+                <div>
+                  <small className="small-text">
+                    BAKKED R&amp;D #Seshwithoutthemess
+                  </small>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
         <div className="col-lg-6 bg-dots">
@@ -70,6 +72,11 @@ const SolutionSection = ({
             className="img-fluid mx-auto text-center solution3 Tilt"
           />
         </div>
+        <img
+          src="../images/svg/product-barcode.svg"
+          alt="Bakked Barcode"
+          className="img-fluid Solution-Barcode"
+        />
       </div>
     </section>
   )

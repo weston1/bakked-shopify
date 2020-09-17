@@ -1710,16 +1710,41 @@ blockquote {
   margin-top: -150px;
 }
 /* Product List */
-.product-list ul li {
+.Product--Feature--List ul {
   font-family: var(--font-secondary);
   list-style-type: none;
+
+  display: inline;
+}
+.Product--Feature--List li {
+  line-height: 2;
   font-size: 22px;
-  line-height: 40px;
-  padding: 0.5rem 0;
-  margin: 1rem 0;
   letter-spacing: -0.81px;
   border-bottom: solid 2px #000;
-  width: 300px;
+  width: 100%;
+  display: inline-flex;
+  vertical-align: middle;
+  &:before {
+    content: '';
+    display: inline-block;
+    height: 3em;
+    width: 3em;
+    background-image: url('../../static/images/svg/check-approved.svg'); // Fallback PNG
+    background-image: url('../../static/images/svg/check-approved.svg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin-top: 1rem;
+    margin: 1rem;
+    margin-right: 0.5em;
+  }
+}
+.Product--Feature--List li p {
+  margin-top: 1rem;
+  margin: 1rem;
+  font-family: var(--font-secondary);
+  font-size: 25px;
+  letter-spacing: -0.93px;
+  line-height: 2;
 }
 /* Find Page */
 
