@@ -22,6 +22,7 @@ const SolutionSection = ({
         <div className="col-lg-6">
           <div className="inline py-5">
             <AlertCircle />
+            <h2 className="text-white">SOLUTION</h2>
             <Content source={section3} className="my-auto text-center-sm" />
             <img src={diagram} alt={title} className="img-fluid py-5" />
             <Content
@@ -63,7 +64,7 @@ const SolutionSection = ({
           <img
             src={solution3}
             alt={title}
-            className="img-fluid mx-auto text-center solution3"
+            className="img-fluid mx-auto text-center solution3 Tilt"
           />
         </div>
       </div>

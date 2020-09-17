@@ -1,54 +1,37 @@
 .StickerProductSection {
   margin: 0 auto;
   height: 50vh;
-  width: 100vw;
   z-index: 0;
   overflow: hidden;
   position: absolute;
-  margin-top: -150px;
 }
 .StickerProductSection--Container {
   padding-top: 20px;
 }
 .StickerProductSection--BG {
-  display: inline-block;
-  white-space: nowrap;
-  background: repeating-linear-gradient(
-    -70deg,
-    rgba(242, 180, 63, 1),
-    rgba(242, 180, 63, 1) 70px,
-    rgba(255, 255, 255, 0) 70px,
-    rgba(255, 255, 255, 0) 140px
-  );
-  background-color: transparent;
-  height: 200px;
-  width: 200vw;
-  left: -20vw;
-  position: absolute;
+  display: block;
 }
 /* Stickers */
 
 .StickerProductSection--sticker--1 {
-  width: 154px;
+  width: 80px;
   max-width: 100%;
   height: auto;
   overflow: hidden;
   position: absolute;
   display: block;
   left: 100px;
-  margin-top: -40px;
   z-index: 5;
 }
 .StickerProductSection--sticker--2 {
-  width: 200px;
+  width: 100px;
   max-width: 100%;
   overflow: hidden;
   height: auto;
   position: absolute;
   z-index: 1;
   display: block;
-  left: 80px;
-  margin-top: -200px;
+  left: 20px;
   z-index: 5;
 }
 .StickerProductSection--sticker--3 {
@@ -58,8 +41,7 @@
   height: auto;
   position: absolute;
   display: block;
-  left: 300px;
-  margin-top: -100px;
+  left: 60%;
   z-index: 5;
 }
 

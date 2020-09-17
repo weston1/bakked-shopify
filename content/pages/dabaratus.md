@@ -59,8 +59,18 @@ featureArray:
   - alt: HEAT RESISTANT METAL TIP FOR DABBING
     image: '../images/svg/heat.svg'
     subtitle: HEAT RESISTANT METAL TIP FOR DABBING
-partnerProduct: Gyro
+section4: >-
+  ## DABARATUS OIL EXTRACT
 
+  #### High-Terpene Fraction
+
+  The Dabaratus is filled with a high-terpene, high-cannabinoid extract that delivers on potency and smooth, nuanced flavors with the click-of-a button.
+
+
+  The oil extract is fully activated in production so that you can feel the effects of the oil without the use of heat.
+footerNote1: '../images/photos/the-dabaratus-cta.jpg'
+footerNote2: '../images/photos/our-oil-cta.jpg'
+partnerProduct: Gyro
 meta:
   description: Bakked Dabaratus is the sesh without the mess. The most conventient way to take dabs. Fully activated cannabis oil.
   title: Dabaratus

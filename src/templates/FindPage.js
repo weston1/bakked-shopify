@@ -4,7 +4,7 @@ import { graphql } from 'gatsby'
 
 import Content from '../components/Content'
 import Layout from '../components/Layout'
-import FindHeader from '../components/FindHeader'
+import PageHeader from '../components/PageHeader'
 import StripesMarquee from '../components/StripesMarquee'
 import Loilpoints from '../components/Loilpoints'
 import PosPartners from '../components/PosPartners'
@@ -14,7 +14,7 @@ import InstagramSection from '../components/InstagramSection'
 // < Mapbox / > USE FOR MAPBOX PLUGIN
 export const FindPageTemplate = ({ title, subtitle, featuredImage, body }) => (
   <main className="Contact">
-    <FindHeader title={title} subtitle={subtitle} />
+    <PageHeader title={title} subtitle={subtitle} />
     <StripesMarquee />
     <section className="Find-Card-Overlay">
       <div className="container">

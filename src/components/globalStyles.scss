@@ -1217,6 +1217,9 @@ ul {
 .text-center {
   text-align: center !important;
 }
+.text-white {
+  color: white !important;
+}
 @media (max-width: 600px) {
   .text-left-sm {
     text-align: left;
@@ -1327,7 +1330,12 @@ blockquote {
     opacity: 0;
   }
 }
-
+.Tilt {
+  transition: all 0.3s ease;
+}
+.Tilt:hover {
+  transform: rotate(10deg);
+}
 /* Layout */
 
 .section {

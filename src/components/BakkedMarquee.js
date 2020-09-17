@@ -9,12 +9,15 @@ const BakkedMarquee = () => (
       {() => (
         <>
           <div className="my-auto BakkedMarquee--Motion">
-            <img
-              src="../images/svg/crash-test.svg"
-              alt="BAKKED EXTRACTS CANNABIS TESTING"
-              className="BakkedMarquee--Icon"
-            />
-            <h1>LET'S #GET BAKKED</h1>
+            <h1>
+              {' '}
+              <img
+                src="../images/svg/crash-test.svg"
+                alt="BAKKED EXTRACTS CANNABIS TESTING"
+                className="BakkedMarquee--Icon"
+              />
+              LET'S #GET BAKKED
+            </h1>
           </div>
           <div className="section blend--bg"></div>
         </>

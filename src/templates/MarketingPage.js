@@ -7,6 +7,7 @@ import Image from '../components/Image'
 import ButtonDispensary from '../components/ButtonDispensary'
 import Slider from '../components/Slider'
 import StickerProductSection from '../components/StickerProductSection'
+import BakkedMarquee from '../components/BakkedMarquee'
 import StripesMarquee from '../components/StripesMarquee'
 import SolutionSection from '../components/SolutionSection'
 import FindSection from '../components/FindSection'
@@ -140,9 +141,9 @@ export const ProductsPageTemplate = ({
       diagram={diagram}
     />
 
-    <section className="section bg-stripes"></section>
+    <BakkedMarquee />
 
-    <section className="section">
+    <section className="section thick">
       <div className="container row">
         <div className="col-lg-6">
           <img

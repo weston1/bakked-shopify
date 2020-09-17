@@ -16,15 +16,16 @@ const Loilpoints = ({ title, loilpointsImg, className = '' }) => {
             />
           </div>
           <div className="col-lg-6">
-            <h2 className="Loilpoints--Title">Located in colorado?</h2>
+            <h2 className="Loilpoints--Title">Located in Colorado?</h2>
             <div className="py-4">
               <p>
                 <span className="text-success">earn</span> points for your
-                Bakked product purchases.
+                Bakked product&nbsp;purchases.
               </p>
               <p>
                 <span className="text-success">burn</span> those points on gear,
-                products &amp; experiences with loilpoints cannabis rewards.
+                products &amp; experiences with loilpoints
+                cannabis&nbsp;rewards.
               </p>
               <a
                 href="https://loilpoints.com/signup"
