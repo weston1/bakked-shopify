@@ -17,7 +17,7 @@ const SolutionSection = ({
   diagram
 }) => {
   return (
-    <section className="section thick bg-primary-dusty">
+    <section className="SolutionSection section thick bg-primary-dusty">
       <div className="container row">
         <div className="col-lg-6">
           <div className="inline py-5">

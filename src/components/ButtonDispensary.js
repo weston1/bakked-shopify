@@ -7,7 +7,7 @@ const ButtonDispensary = () => {
     <Link
       to="/find/"
       alt="Find Bakked Extracts"
-      className="Button ButtonDispensary my-auto"
+      className="Button ButtonDispensary"
     >
       <MapPin size="2rem" className="mb-auto" />
       &nbsp; Find A Dispensary

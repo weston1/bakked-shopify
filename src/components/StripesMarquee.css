@@ -29,3 +29,11 @@
 .StripesMarquee--Motion h1 {
   color: transparent;
 }
+@media (max-width: 768px) {
+  .StripesMarquee {
+    height: 30vh;
+  }
+  .StripesMarquee--Motion {
+    height: 120px;
+  }
+}

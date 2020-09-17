@@ -5,6 +5,7 @@ title:
 featuredImage: '../images/photos/about-img-2.jpg'
 subtitle:
 sliderTagline: Sticky Situations Suck
+buttonBuyGyro: 'hidden'
 video: '../images/bg/bakked_outro_3.mp4'
 videoLogo: '../images/bg/bakked_outro_3.mp4'
 videoPoster: '../images/bg/bakked_poster.gif'
@@ -30,17 +31,17 @@ section3: >-
 
   Depending on the method used to refine the Live Resin, consistencies and ratios of terpene extract to cannabinoid crystals can vary, from Sauces (larger crystals) to Sugars (finer, sand-like consistency).
 section3Features: >-
-  - ANTI-GRAVITY PROOF
+  - OOZE IT ANYWHERE
 
-  - ZERO SPILL
+  - SESH WITHOUT THE MESS
 
-  -POCKET PROOF
+  - CLICK TO DOSE
 section3List: >-
-  - ANTI-GRAVITY PROOF
+  - OOZE IT ANYWHERE
 
-  - ZERO SPILL
+  - SESH WITHOUT THE MESS
 
-  -POCKET PROOF
+  - CLICK TO DOSE
 featureBlock1: '../images/photos/dabaratus/THE-ULTIMATE-DABBING-APARATUS.png'
 featureBlock2: '../images/photos/dabaratus/Dabaratus-New.png'
 featureArray:

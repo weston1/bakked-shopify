@@ -1391,8 +1391,9 @@ blockquote {
   text-decoration: none;
   text-align: justify;
   vertical-align: auto;
-  display: flex;
+  display: inline-flex;
   justify-content: center;
+  white-space: nowrap;
   align-items: center;
   font-weight: 700;
   letter-spacing: 0.05em;
@@ -1407,7 +1408,8 @@ blockquote {
   cursor: pointer;
   border-radius: var(--borderRadius);
   text-align: center;
-  min-width: 300px;
+  min-width: 200px;
+  overflow: hidden;
 }
 .Button-w {
   background: white;
@@ -1475,6 +1477,7 @@ blockquote {
   .Button {
     align-content: center;
     width: 100%;
+    font-size: 4vw;
   }
 }
 /* Background */
@@ -1491,79 +1494,6 @@ blockquote {
   .sticker {
     max-width: 200px;
   }
-}
-/*Tooltip*/
-
-.tooltip {
-  display: inline-block;
-  position: relative;
-  color: #572adc;
-  background: linear-gradient(40deg, #2812da 0%, #e82aa3 100%);
-  background-size: cover;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
-  text-fill-color: transparent;
-}
-
-.tooltip__line {
-  position: absolute;
-  height: 2px;
-  width: 100%;
-  bottom: 0;
-  left: 0;
-  background: linear-gradient(40deg, #2812da 0%, #e82aa3 100%);
-  transform: scale3d(0, 1, 1);
-  transform-origin: 100% 50%;
-}
-
-.tooltip__content {
-  position: absolute;
-  bottom: calc(100% + 0.3rem);
-  font-size: 0.85rem;
-  width: 260px;
-  left: 50%;
-  line-height: 1.4;
-  margin-left: -130px;
-  background: #fff;
-  border-radius: 10px;
-  box-shadow: 0 -1px 10px rgba(72, 72, 72, 0.025),
-    0 10px 20px rgba(72, 72, 72, 0.05);
-  color: #6d6991;
-  padding: 2rem;
-  text-align: justify;
-  pointer-events: none;
-  opacity: 0;
-  transform: translate3d(0, 30px, 0);
-  transition: all 0.3s cubic-bezier(0.1, 1, 0.9, 1);
-  transition-property: opacity, transform;
-}
-
-.tooltip:hover .tooltip__content {
-  opacity: 1;
-  transform: translate3d(0, 0, 0);
-}
-
-.tooltip__content::after {
-  content: '';
-  position: absolute;
-  top: 100%;
-  left: 50%;
-  margin-left: -10px;
-  display: block;
-  border-style: solid;
-  border-width: 10px 10px 0 10px;
-  border-color: #fff transparent transparent transparent;
-}
-
-.tooltip__content span {
-  display: block;
-  background: linear-gradient(40deg, #2812da 0%, #e82aa3 100%);
-  background-size: cover;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
-  text-fill-color: transparent;
 }
 
 /* Background */
@@ -1620,7 +1550,7 @@ blockquote {
 @media (max-width: 768px) {
   .bg-product-stripes {
     background: url('../../static/images/svg/product-stripes.svg'), transparent;
-    background-size: 150vw 50vh;
+    background-size: 150vw 100vh;
     background-position: -30% 100%;
     background-repeat: no-repeat;
   }
@@ -1675,11 +1605,8 @@ blockquote {
 .Product--Featured {
   display: inline;
   position: relative;
-  right: 120px;
   z-index: 10;
-  max-height: auto;
-  max-width: 600px;
-  width: 50vw;
+  max-width: 420px;
 }
 .ProductSection--Stickers {
   width: 100vw;
@@ -1713,7 +1640,6 @@ blockquote {
 .Product--Feature--List ul {
   font-family: var(--font-secondary);
   list-style-type: none;
-
   display: inline;
 }
 .Product--Feature--List li {
@@ -1745,6 +1671,26 @@ blockquote {
   font-size: 25px;
   letter-spacing: -0.93px;
   line-height: 2;
+}
+
+@media (max-width: 768px) {
+  .Home--Product--Featured {
+    max-height: auto;
+    max-width: 600px;
+    padding: 10rem 0;
+    width: 100%;
+  }
+  .Product--Title {
+    display: block;
+    position: relative;
+    z-index: 10;
+    width: 100%;
+  }
+  .Product--Featured {
+    display: block;
+    width: 100%;
+    margin: 0 auto;
+  }
 }
 /* Find Page */
 

@@ -5,6 +5,7 @@ import Content from '../components/Content.js'
 import Layout from '../components/Layout.js'
 import Image from '../components/Image'
 import ButtonDispensary from '../components/ButtonDispensary'
+import ButtonBuyGyro from '../components/ButtonBuyGyro'
 import Slider from '../components/Slider'
 import StickerProductSection from '../components/StickerProductSection'
 import BakkedMarquee from '../components/BakkedMarquee'
@@ -20,6 +21,7 @@ export const ProductsPageTemplate = ({
   title,
   subtitle,
   sliderTagline,
+  buttonBuyGyro,
   video,
   videoPoster,
   videoTitle,
@@ -59,25 +61,40 @@ export const ProductsPageTemplate = ({
     <section className="section Product--Main thick bg-dusty">
       <div className="container">
         <div className="row">
-          <div className="Product--Title">
+          {/* Desktop */}
+          <div className="col-lg-6 d-none d-md-block d-lg-block">
             <Content source={section1} className="text-center-sm" />
             <Content
               source={section3List}
               className="Product--Feature--List text-center-sm"
             />
             <ButtonDispensary />
-            <button className="Button">
-              <ShoppingCart />
-              &nbsp; BUY AN EMPTY GYRO
-            </button>
+            <ButtonBuyGyro buttonBuyGyro={buttonBuyGyro} />
           </div>
-
-          <div className="col-lg-1">
+          <div className="col-lg-6 d-none d-md-block d-lg-block">
             <img
               src={featureBlock1}
               alt={title}
-              className="Product--Featured"
+              className="Product--Featured my-auto"
             />
+          </div>
+
+          {/* Mobile */}
+          <div className="d-block d-md-none d-lg-none container">
+            <div className="Product--Title col-lg-12">
+              <Content source={section1} className="text-center-sm" />
+            </div>
+            <div className="Product--Featured col-lg-6">
+              <img src={featureBlock1} alt={title} className="img-fluid" />
+            </div>
+            <div className="Product--Title col-lg-6">
+              <Content
+                source={section3List}
+                className="Product--Feature--List text-center-sm"
+              />
+              <ButtonDispensary />
+              <ButtonBuyGyro title={title} buttonBuyGyro={buttonBuyGyro} />
+            </div>
           </div>
         </div>
       </div>
@@ -107,7 +124,7 @@ export const ProductsPageTemplate = ({
         <img
           alt="Bakked Sticker 1"
           src="../images/svg/test-symbol.svg"
-          className="icon"
+          className="Tilt icon"
         />
       </div>
       <div className="container text-center">
@@ -144,6 +161,7 @@ export const ProductsPageTemplate = ({
       solution3={solution3}
       diagram={diagram}
     />
+
     <div className="ProductPage--BakkedMarquee">
       <BakkedMarquee />
     </div>
@@ -195,6 +213,7 @@ export const pageQuery = graphql`
         template
         subtitle
         sliderTagline
+        buttonBuyGyro
         video
         videoLogo
         videoPoster

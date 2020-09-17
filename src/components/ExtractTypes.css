@@ -1,12 +1,12 @@
 .Item--Petri {
-  max-width: 300px;
+  width: 75vw;
   transition: all 0.3s ease;
 }
 .Item--Petri:hover {
   transform: rotate(10deg);
 }
 .FeatureArray--Sticker--Container {
-  margin-top: -40px;
+  margin-top: -30px;
   z-index: 0;
 }
 .FeatureArray--Sticker {

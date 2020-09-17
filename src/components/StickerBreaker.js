@@ -11,12 +11,12 @@ const StickerBreaker = ({ sticker1, sticker2 }) => {
         <div className="StickerBreaker--line my-auto">
           <Image
             src={sticker2}
-            alt="Replace"
+            alt="Bakked Arrow"
             className="StickerBreaker--sticker1"
           />
           <Image
             src={sticker1}
-            alt="Replace"
+            alt="More Dabaratus Innovations Below"
             className="StickerBreaker--sticker2"
           />
         </div>

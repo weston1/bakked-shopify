@@ -211,23 +211,23 @@
     overflow: hidden;
   }
   .sticker-header-1 {
-    width: 100px;
-    left: 50px;
+    width: 30vw;
+    left: 10%;
     margin-top: -20px;
     overflow: hidden;
   }
   .sticker-header-2 {
-    width: 75%;
+    width: 80vw;
     margin: 0 auto;
     overflow: hidden;
-    left: 50px;
+    left: 10%;
     margin-top: -150px;
   }
   .sticker-header-3 {
-    width: 150px;
+    width: 30vw;
     max-width: 100%;
     overflow: hidden;
-    left: 150;
+    left: 50%;
     margin-top: -100px;
     z-index: 2;
   }

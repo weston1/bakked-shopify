@@ -13,7 +13,7 @@ const FindSection = ({ title, className = '' }) => {
             #GetBakked at retail dispensaries
           </h2>
           <p>
-            throughout california, Colorado, Oregon, New Mexico, Maine &amp;
+            throughout California, Colorado, Oregon, New Mexico, Maine &amp;
             Vermont.
           </p>
           <ButtonDispensary />

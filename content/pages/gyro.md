@@ -5,7 +5,7 @@ title: Gyro
 featuredImage: '../images/photos/about-img-2.jpg'
 subtitle:
 sliderTagline: ANTI-GRAVITY SIMULATOR
-
+buttonBuyGyro: 'Suh'
 video: '../images/bg/bakked_outro_3.mp4'
 videoLogo: '../images/bg/bakked_outro_3.mp4'
 videoPoster: '../images/bg/bakked_poster.gif'
@@ -14,12 +14,6 @@ section1: >-
   ## RIGHT SIDE UP, EVEN WHEN UPSIDE DOWN
 
   The no spill concentrate container - filled with high-quality live resin extracts.
-
-  - this one
-
-  - that one
-
-  - the other one
 section2: >-
   ## WE DO EVERYTHING SO YOU DON’T HAVE TO DO ANYTHING
 
@@ -27,20 +21,23 @@ section2: >-
 section3: >-
   A container your dabs & wallet will thank you for, meet the Gyro. Gone are the days of wasted cannabis extract, with the Gyro you can spin, shake it, toss it and even drop it and your dabs still won’t spill. We encourage you to try this at home.
 section3Features: >-
-
   - ANTI-GRAVITY PROOF
 
-
   - ZERO SPILL
-
 
   - POCKET PROOF
+
+  - TRY THIS AT HOME
 section3List: >-
+
   - ANTI-GRAVITY PROOF
 
   - ZERO SPILL
 
-  -POCKET PROOF
+  - POCKET PROOF
+
+  - TRY THIS AT HOME
+
 section4: >-
   ## LIVE RESIN
 

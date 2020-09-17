@@ -102,8 +102,8 @@ export const HomePageTemplate = ({
             <div className="col-lg-7 my-auto bg-dots">
               <img
                 src={sectionTwoImg2}
-                alt={title}
-                className="img-fluid mx-auto text-center"
+                alt="Product - The Gyro"
+                className="Home--Product--Featured img-fluid mx-auto text-center"
               />
             </div>
           </div>
@@ -119,14 +119,14 @@ export const HomePageTemplate = ({
       <div className="bg-product-stripes-left">
         <div className="container Spacer">
           <div className="row">
-            <div className="col-lg-6 my-auto d-block d-md-none d-lg-none p-3">
+            <div className="col-lg-6 my-auto d-block d-md-none d-lg-none py-3">
               <Fade>
                 <img
                   src={bakkedImg4}
                   alt="Product - The Dabaratus"
-                  className="img-fluid mx-auto text-center py-5"
+                  className="img-fluid mx-auto py-4 text-center"
                 />
-                <Content source={section3} />
+                <Content source={section3} className="text-left py-4" />
                 <Link to="/products/" className="Button">
                   SEE WHY WE MADE IT
                 </Link>
@@ -144,9 +144,9 @@ export const HomePageTemplate = ({
                 <img
                   src={bakkedImg4}
                   alt="Product - The Dabaratus"
-                  className="img-fluid mx-auto text-center"
+                  className="img-fluid mx-auto py-4 text-center"
                 />
-                <Content source={section3} />
+                <Content source={section3} className="text-left py-4" />
                 <Link to="/products/" className="Button">
                   SEE WHY WE MADE IT
                 </Link>
