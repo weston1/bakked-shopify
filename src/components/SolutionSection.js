@@ -4,7 +4,7 @@ import Content from './Content'
 import { AlertCircle } from 'react-feather'
 import ButtonDispensary from './ButtonDispensary'
 
-import './SolutionSection.css'
+import './SolutionSection.scss'
 
 const SolutionSection = ({
   title,
@@ -17,19 +17,22 @@ const SolutionSection = ({
   diagram
 }) => {
   return (
-    <section className="section bg-primary-dusty">
+    <section className="section thick bg-primary-dusty">
       <div className="container row">
         <div className="col-lg-6">
           <div className="inline py-5">
             <AlertCircle />
             <h2 className="text-white">SOLUTION</h2>
             <Content source={section3} className="my-auto text-center-sm" />
-            <img src={diagram} alt={title} className="img-fluid py-5" />
-            <Content
-              source={section3Features}
-              className="my-auto text-center-sm"
-            />
-            <Content source={section3List} className="my-auto" />
+            <img src={diagram} alt={title} className="img-fluid p-3" />
+            <div className="Solution--Approved">
+              <p>CHECKLIST:</p>
+              <Content
+                source={section3Features}
+                className="my-auto text-center-sm Solution--Feature--List"
+              />
+              <Content source={section3List} className="my-auto" />
+            </div>
           </div>
           <ButtonDispensary />
           <div>
@@ -50,7 +53,7 @@ const SolutionSection = ({
             <small>BAKKED R&amp;D #Seshwithoutthemess</small>
           </div>
         </div>
-        <div className="col-lg-6">
+        <div className="col-lg-6 bg-dots">
           <img
             src={solution1}
             alt={title}

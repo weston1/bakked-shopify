@@ -1398,8 +1398,8 @@ blockquote {
   line-height: 2;
   font-family: var(--font-secondary);
   display: inline-block;
-  padding: 2rem;
-  margin: 1rem 0.5rem 0.2rem 0;
+  padding: 1.5rem;
+  margin: 2rem 0.5rem 0.2rem 0;
   border: none;
   transition: all 0.3s ease;
   cursor: pointer;
@@ -1633,6 +1633,7 @@ blockquote {
 /* Product Page */
 .Product--Main {
   z-index: 2;
+  text-transform: uppercase;
 }
 .Product--Header {
   margin: 0 auto;
@@ -1677,6 +1678,34 @@ blockquote {
   max-height: auto;
   max-width: 600px;
   width: 50vw;
+}
+.ProductSection--Stickers {
+  width: 100vw;
+  height: 500px;
+  position: absolute;
+  display: block;
+  z-index: 5;
+}
+.ProductSection--Stickers-1 {
+  width: 200px;
+  position: absolute;
+  display: block;
+  left: 20%;
+  z-index: 10;
+}
+.ProductSection--Stickers-2 {
+  width: 250px;
+  position: absolute;
+  display: block;
+  right: 20%;
+  margin-top: 70px;
+  z-index: 10;
+}
+.ProductPage--StripesMarquee {
+  margin-bottom: -150px;
+}
+.ProductPage--BakkedMarquee {
+  margin-top: -150px;
 }
 /* Product List */
 .product-list ul li {

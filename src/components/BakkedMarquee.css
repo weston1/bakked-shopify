@@ -8,7 +8,6 @@
   overflow: hidden;
 }
 .blend--bg {
-  background: var(--primary);
   height: 200px;
 }
 .ticker {

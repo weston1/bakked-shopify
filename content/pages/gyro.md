@@ -25,15 +25,16 @@ section2: >-
 
   Here at Bakked R&D we create solutions to dabbing problems so you can spend less time getting ready to take a dab and more time actually enjoying your dabs, without having to worry about cleaning up a mess afterwards.
 section3: >-
-  ## Solution
-
   A container your dabs & wallet will thank you for, meet the Gyro. Gone are the days of wasted cannabis extract, with the Gyro you can spin, shake it, toss it and even drop it and your dabs still won’t spill. We encourage you to try this at home.
 section3Features: >-
+
   - ANTI-GRAVITY PROOF
+
 
   - ZERO SPILL
 
-  -POCKET PROOF
+
+  - POCKET PROOF
 section3List: >-
   - ANTI-GRAVITY PROOF
 

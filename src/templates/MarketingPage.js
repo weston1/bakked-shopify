@@ -85,12 +85,21 @@ export const ProductsPageTemplate = ({
           <div className="Product--Header--BG"></div>
         </div>
       </div>
+      <div className="ProductSection--Stickers">
+        {sticker1 && (
+          <Image
+            src={sticker1}
+            alt={title}
+            className="ProductSection--Stickers-1"
+          />
+        )}
+        <Image
+          src={sticker2}
+          alt={title}
+          className="ProductSection--Stickers-2"
+        />
+      </div>
     </section>
-
-    <div className="StickerProductSection--Stickers">
-      {sticker1 && <Image src={sticker1} alt={title} size="10px" />}
-      <Image src={sticker2} alt={title} size="50px" />
-    </div>
 
     <section className="section">
       <div className="container col-lg-10 text-center">
@@ -114,21 +123,14 @@ export const ProductsPageTemplate = ({
     </section>
 
     <StickerProductSection
+      sticker1={sticker1}
+      sticker5={sticker5}
       sticker3={sticker3}
       sticker4={sticker4}
-      sticker5={sticker5}
     />
-
-    <section className="section">
-      <div className="container col-lg-10 text-center">
-        {sticker1 && <Image src={sticker1} alt={title} size="10rem" />}
-        <Image src={sticker2} alt={title} size="cover" />
-        <Image src={sticker3} alt={title} size="cover" />
-        {sticker1 && <Image src={sticker1} alt={title} size="10rem" />}
-      </div>
-    </section>
-
-    <StripesMarquee />
+    <div className="ProductPage--StripesMarquee">
+      <StripesMarquee />
+    </div>
 
     <SolutionSection
       title={title}
@@ -140,8 +142,9 @@ export const ProductsPageTemplate = ({
       solution3={solution3}
       diagram={diagram}
     />
-
-    <BakkedMarquee />
+    <div className="ProductPage--BakkedMarquee">
+      <BakkedMarquee />
+    </div>
 
     <section className="section thick">
       <div className="container row">

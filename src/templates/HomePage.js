@@ -64,7 +64,7 @@ export const HomePageTemplate = ({
       title={title}
       subtitle={subtitle}
       backgroundImage={featuredImage}
-      className="section thick bg-dusty"
+      className="section bg-dusty"
     />
 
     <section className="section thick bg-dusty">

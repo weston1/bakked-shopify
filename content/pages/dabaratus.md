@@ -27,8 +27,6 @@ section2: >-
 
   Here at Bakked R&D we create solutions to dabbing problems so you can spend less time getting ready to take a dab and more time actually enjoying your dabs, without having to worry about cleaning up a mess afterwards.
 section3: >-
-  ### LIVE RESIN
-
   Looking for flavor? Look no further. Live Resin is a full-spectrum, flavor-rich extract that lets you taste every flavor and feel every feeling. Live Resin is made up of terpene fractions and high-potency cannabinoid crystals.
 
   Depending on the method used to refine the Live Resin, consistencies and ratios of terpene extract to cannabinoid crystals can vary, from Sauces (larger crystals) to Sugars (finer, sand-like consistency).

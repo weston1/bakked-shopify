@@ -129,6 +129,12 @@
 }
 
 /* Fader */
+.fader {
+  height: 500px !important;
+  width: auto;
+  position: relative;
+  overflow: hidden;
+}
 
 .fader__slide {
   width: 100%;
@@ -189,11 +195,20 @@
     padding: 0 0 20vh 0;
     height: 90vh;
   }
+  .BakkedHeader--Slider {
+    height: 90vh;
+  }
   .BakkedHeader--Title {
     font-size: 4rem;
   }
   .BakkedHeader-large {
     padding: 12.5rem 0;
+  }
+  .fader {
+    height: 600px !important;
+    width: auto;
+    position: relative;
+    overflow: hidden;
   }
   .sticker-header-1 {
     width: 100px;
