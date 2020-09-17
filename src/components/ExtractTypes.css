@@ -1,4 +1,5 @@
 .Item--Petri {
+  max-width: 300px;
   transition: all 0.3s ease;
 }
 .Item--Petri:hover {

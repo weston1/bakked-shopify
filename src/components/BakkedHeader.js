@@ -4,28 +4,26 @@ import 'keen-slider/keen-slider.min.css'
 
 import './BakkedHeader.css'
 
+const images = [
+  'https://images.unsplash.com/photo-1590004953392-5aba2e72269a?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&h=500&w=800&q=80',
+  'https://images.unsplash.com/photo-1590004845575-cc18b13d1d0a?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&h=500&w=800&q=80',
+  'https://images.unsplash.com/photo-1590004987778-bece5c9adab6?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&h=500&w=800&q=80',
+  'https://images.unsplash.com/photo-1590005176489-db2e714711fc?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&h=500&w=800&q=80'
+]
+
 export default props => {
+  const [opacities, setOpacities] = React.useState([])
   const [pause, setPause] = React.useState(false)
   const timer = React.useRef()
   const [sliderRef, slider] = useKeenSlider({
+    slides: images.length,
     loop: true,
-    duration: 6000,
-    dragStart: () => {
-      setPause(true)
-    },
-    dragEnd: () => {
-      setPause(false)
+    duration: 3000,
+    move(s) {
+      const new_opacities = s.details().positions.map(slide => slide.portion)
+      setOpacities(new_opacities)
     }
   })
-
-  React.useEffect(() => {
-    sliderRef.current.addEventListener('mouseover', () => {
-      setPause(true)
-    })
-    sliderRef.current.addEventListener('mouseout', () => {
-      setPause(false)
-    })
-  }, [sliderRef])
 
   React.useEffect(() => {
     timer.current = setInterval(() => {
@@ -40,11 +38,17 @@ export default props => {
 
   return (
     <div className="BakkedHeader">
-      <div ref={sliderRef} className="BakkedHeader--Slider keen-slider">
-        <div className="keen-slider__slide bakked-slide1">1</div>
-        <div className="keen-slider__slide bakked-slide2">2</div>
+      <div ref={sliderRef} className="BakkedHeader--Slider fader">
+        {images.map((src, idx) => (
+          <div
+            key={idx}
+            className="fader__slide"
+            style={{ opacity: opacities[idx] }}
+          >
+            <img src={src} />
+          </div>
+        ))}
       </div>
-
       <div className="header-stickers">
         <div className="">
           <img

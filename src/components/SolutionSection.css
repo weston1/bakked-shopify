@@ -1,0 +1,21 @@
+.breaker {
+  height: 2px;
+  width: 100%;
+  background-color: #000 !important;
+  margin: 2rem 0;
+}
+.solution1 {
+  display: block;
+  position: absolute;
+  z-index: 0;
+}
+.solution2 {
+  display: block;
+  position: absolute;
+  z-index: 1;
+}
+.solution3 {
+  display: block;
+  position: absolute;
+  z-index: 2;
+}

@@ -9,7 +9,7 @@ sliderTagline: ANTI-GRAVITY SIMULATOR
 video: '../images/bg/bakked_outro_3.mp4'
 videoLogo: '../images/bg/bakked_outro_3.mp4'
 videoPoster: '../images/bg/bakked_poster.gif'
-videoTitle: Take a glob.
+videoTitle:
 section1: >-
   ## RIGHT SIDE UP, EVEN WHEN UPSIDE DOWN
 
@@ -50,13 +50,16 @@ section4: >-
 bakkedImg1: '../images/photos/gyro-product.png'
 bakkedImg2: '../images/photos/caution-sticker.jpg'
 bakkedImg3: '../images/photos/precious-cargo.jpg'
-solution1: '../images/photos/gyro/gyro-package.png'
+solution1: '../images/photos/stickers/gyro-label.png'
+solution2: '../images/photos/gyro/gyro-solution-lockup-live-resin.png'
+solution3: '../images/photos/gyro/gyro-package.png'
 liveResin: '../images/photos/gyro/live-resin-lockup.png'
-sticker1: '../images/photos/stickers/arrow.png'
-sticker2: '../images/photos/stickers/precious-cargo.jpg'
+sticker1: '../images/photos/stickers/caution-mouth-watering.png'
+sticker2: '../images/photos/stickers/warning-fidget-factor.png'
 sticker3: '../images/photos/stickers/caution-sticker.jpg'
 sticker4: '../images/photos/stickers/arrow.png'
 sticker5: '../images/photos/stickers/precious-cargo.jpg'
+diagram: '../images/svg/gyro-diagram.svg'
 featureBlock1: '../images/photos/gyro-product.png'
 featureBlock2: '../images/photos/gyro-product.png'
 footerNote1: '../images/photos/the-dabaratus-cta.jpg'

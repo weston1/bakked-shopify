@@ -1380,14 +1380,14 @@ blockquote {
   text-transform: uppercase;
   text-decoration: none;
   text-align: justify;
-  vertical-align: middle;
+  vertical-align: auto;
   display: flex;
   justify-content: center;
   align-items: center;
   font-weight: 700;
   letter-spacing: 0.05em;
   font-size: 1.8rem;
-  line-height: 1;
+  line-height: 2;
   font-family: var(--font-secondary);
   display: inline-block;
   padding: 2rem;
@@ -1445,6 +1445,8 @@ blockquote {
   cursor: progress;
 }
 .Button-blank {
+  padding: 1rem;
+  border-radius: var(--borderRadius);
   appearance: none;
   background: none;
   outline: none;
@@ -1456,6 +1458,8 @@ blockquote {
 }
 .Button-block {
   display: inline-block;
+}
+.ButtonDispensary {
 }
 @media (max-width: 600px) {
   .Button {
@@ -1569,7 +1573,6 @@ blockquote {
 }
 .bg-dusty {
   background: url('../../static/images/bg/stardust.png'), transparent;
-  background-size: 300px auto;
   background-position: top right;
   background-repeat: repeat;
 }
@@ -1604,7 +1607,6 @@ blockquote {
   background-repeat: no-repeat;
   min-height: 500px;
 }
-
 @media (max-width: 768px) {
   .bg-product-stripes {
     background: url('../../static/images/svg/product-stripes.svg'), transparent;
@@ -1621,10 +1623,52 @@ blockquote {
 }
 
 /* Product Page */
-.Product--Header {
+.Product--Main {
   z-index: 2;
 }
-.featureProduct {
+.Product--Header {
+  margin: 0 auto;
+  height: 50vh;
+  width: 100vw;
+  z-index: 0;
+  overflow: hidden;
+  position: absolute;
+  margin-top: -150px;
+}
+.Product--Header--Container {
+  padding-top: 20px;
+  transform: rotate(-3deg) !important;
+}
+.Product--Header--BG {
+  display: inline-block;
+  white-space: nowrap;
+  background: repeating-linear-gradient(
+    -70deg,
+    rgba(242, 180, 63, 1),
+    rgba(242, 180, 63, 1) 70px,
+    rgba(255, 255, 255, 0) 70px,
+    rgba(255, 255, 255, 0) 140px
+  );
+  background-color: transparent;
+  height: 200px;
+  width: 200vw;
+  left: -20vw;
+  position: absolute;
+}
+.Product--Title {
+  display: inline;
+  position: relative;
+  z-index: 10;
+  width: 40vw;
+}
+.Product--Featured {
+  display: inline;
+  position: relative;
+  right: 120px;
+  z-index: 10;
+  max-height: auto;
+  max-width: 600px;
+  width: 50vw;
 }
 /* Product List */
 .product-list ul li {

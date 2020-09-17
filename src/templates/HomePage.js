@@ -82,27 +82,27 @@ export const HomePageTemplate = ({
         <div className="container">
           <div className="row col-lg-12 mx-auto">
             <div className="col-lg-5 p-3">
-              <img
-                src={sectionTwoImg}
-                alt={title}
-                className="img-fluid mx-auto py-4 text-center"
-              />
-              <Content source={sectionTwo} className="text-left py-4" />
-              <div className="Button-block col-sm-10 mx-auto">
-                <Link to="/products/" className="Button">
-                  SEE WHY WE MADE IT
-                </Link>
-                <ButtonDispensary />
-              </div>
+              <Fade>
+                <img
+                  src={sectionTwoImg}
+                  alt={title}
+                  className="img-fluid mx-auto py-4 text-center"
+                />
+                <Content source={sectionTwo} className="text-left py-4" />
+                <div className="Button-block col-sm-10 mx-auto">
+                  <Link to="/products/" className="Button">
+                    SEE WHY WE MADE IT
+                  </Link>
+                  <ButtonDispensary />
+                </div>
+              </Fade>
             </div>
             <div className="col-lg-7 my-auto bg-dots">
-              <Fade direction="up">
-                <img
-                  src={sectionTwoImg2}
-                  alt={title}
-                  className="img-fluid mx-auto text-center"
-                />
-              </Fade>
+              <img
+                src={sectionTwoImg2}
+                alt={title}
+                className="img-fluid mx-auto text-center"
+              />
             </div>
           </div>
         </div>
@@ -115,34 +115,38 @@ export const HomePageTemplate = ({
       <div className="bg-product-stripes-left">
         <div className="container">
           <div className="row">
-            <div className="col-lg-4 my-auto d-block d-md-none d-lg-none p-3">
-              <img
-                src={bakkedImg4}
-                alt={title}
-                className="img-fluid mx-auto text-center py-5"
-              />
-              <Content source={section3} />
-              <Link to="/products" className="Button">
-                SEE WHY WE MADE IT
-              </Link>
+            <div className="col-lg-6 my-auto d-block d-md-none d-lg-none p-3">
+              <Fade>
+                <img
+                  src={bakkedImg4}
+                  alt="Product - The Dabaratus"
+                  className="img-fluid mx-auto text-center py-5"
+                />
+                <Content source={section3} />
+                <Link to="/products/" className="Button">
+                  SEE WHY WE MADE IT
+                </Link>
+              </Fade>
             </div>
             <div className="col-lg-6 mx-auto py-5 bg-dots-left">
               <img
                 src={bakkedImg3}
-                alt={title}
+                alt="The Dabaratus - Works Well With Portable Vapes - Consistent Dabs Every Time - Terpene Rich Extract - Heat Resistent Metal Tip"
                 className="img-fluid mx-auto text-center"
               />
             </div>
             <div className="col-lg-4 my-auto d-none d-md-block d-lg-block">
-              <img
-                src={bakkedImg4}
-                alt={title}
-                className="img-fluid mx-auto text-center"
-              />
-              <Content source={section3} />
-              <Link to="/products" className="Button">
-                SEE WHY WE MADE IT
-              </Link>
+              <Fade>
+                <img
+                  src={bakkedImg4}
+                  alt="Product - The Dabaratus"
+                  className="img-fluid mx-auto text-center"
+                />
+                <Content source={section3} />
+                <Link to="/products/" className="Button">
+                  SEE WHY WE MADE IT
+                </Link>
+              </Fade>
             </div>
           </div>
         </div>

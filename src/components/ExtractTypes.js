@@ -23,7 +23,7 @@ const ExtractTypes = ({
               <div className="relative">
                 <Image
                   src={liveResin}
-                  alt="REPLACE"
+                  alt="Bakked Extracts Live Resin"
                   className="img-fluid Item--Petri"
                 />
               </div>
@@ -32,18 +32,18 @@ const ExtractTypes = ({
               <Image
                 resolutions="small"
                 src={liveResinSticker}
-                alt="REPLACE"
+                alt="Bakked Extracts Live Resin Sticker"
                 className="img-fluid FeatureArray--Sticker"
               />
             </div>
-            <p>{liveResinTitle}</p>
+            <p className="col-lg-7 mx-auto">{liveResinTitle}</p>
           </div>
           <div className="col-lg-6 py-3">
             {highTerpExtract && (
               <div className="relative">
                 <Image
                   src={highTerpExtract}
-                  alt="Lorem Ipsum"
+                  alt="Bakked Extracts High Terpene Extract"
                   className="img-fluid Item--Petri"
                 />
               </div>
@@ -52,16 +52,16 @@ const ExtractTypes = ({
               <Image
                 resolutions="small"
                 src={highTerpSticker}
-                alt="REPLACE"
+                alt="Bakked Extracts High Terpene Extract"
                 className="img-fluid FeatureArray--Sticker"
               />
             </div>
-            <p>{highTerpTitle}</p>
+            <p className="col-lg-7 mx-auto">{highTerpTitle}</p>
           </div>
         </div>
         <div className="container py-4">
           <p>TESTING IN SESSION: DIAMONDS, ROSIN &amp; LIVE BUDDER</p>
-          <Link to="/products" className="Button mx-auto text-center">
+          <Link to="/products/" className="Button mx-auto text-center">
             Explore Oil Types
           </Link>
         </div>

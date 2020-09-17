@@ -8,12 +8,16 @@ sliderTagline: Sticky Situations Suck
 video: '../images/bg/bakked_outro_3.mp4'
 videoLogo: '../images/bg/bakked_outro_3.mp4'
 videoPoster: '../images/bg/bakked_poster.gif'
-videoTitle: Take a glob.
+videoTitle:
 sticker1: '../images/photos/stickers/arrow.png'
 sticker2: '../images/photos/stickers/precious-cargo.jpg'
 sticker3: '../images/photos/stickers/caution-sticker.jpg'
 sticker4: '../images/photos/stickers/arrow.png'
 sticker5: '../images/photos/stickers/precious-cargo.jpg'
+solution1: '../images/photos/gyro/gyro-package.png'
+solution2: '../images/photos/gyro/gyro-solution-lockup-live-resin.png'
+solution3: '../images/photos/gyro/gyro-package.png'
+diagram: '../images/svg/gyro-diagram.svg'
 section1: >-
   ## THE ULTIMATE DABBING APARATUS
 

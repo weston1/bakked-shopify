@@ -33,12 +33,15 @@ export const ProductsPageTemplate = ({
   bakkedImg2,
   bakkedImg3,
   solution1,
+  solution2,
+  solution3,
   liveResin,
   sticker1,
   sticker2,
   sticker3,
   sticker4,
   sticker5,
+  diagram,
   featureBlock1,
   featureBlock2,
   footerNote1,
@@ -52,10 +55,10 @@ export const ProductsPageTemplate = ({
       </BackgroundVideo>
     </section>
 
-    <section className="section thick Product--Header bg-dusty">
+    <section className="section Product--Main thick bg-dusty">
       <div className="container">
         <div className="row">
-          <div className="col-lg-6">
+          <div className="Product--Title">
             <Content
               source={section1}
               className="product-list text-center-sm"
@@ -67,24 +70,23 @@ export const ProductsPageTemplate = ({
             </button>
           </div>
 
-          <div className="col-lg-6">
+          <div className="col-lg-1">
             <img
               src={featureBlock1}
               alt={title}
-              className="img-fluid mx-auto text-center featureProduct"
+              className="Product--Featured"
             />
           </div>
-
-          <StickerProductSection
-            sticker1={sticker1}
-            sticker2={sticker2}
-            sticker3={sticker3}
-          />
+        </div>
+      </div>
+      <div className="Product--Header">
+        <div className="Product--Header--Container">
+          <div className="Product--Header--BG"></div>
         </div>
       </div>
     </section>
 
-    <div className="container">
+    <div className="StickerProductSection--Stickers">
       {sticker1 && <Image src={sticker1} alt={title} size="10px" />}
       <Image src={sticker2} alt={title} size="50px" />
     </div>
@@ -101,12 +103,6 @@ export const ProductsPageTemplate = ({
         <Content source={section2} className="col-lg-8  mx-auto" />
       </div>
     </section>
-
-    <StickerProductSection
-      sticker1={sticker1}
-      sticker2={sticker2}
-      sticker3={sticker3}
-    />
 
     <section className="section">
       <div className="col-lg-12">
@@ -139,6 +135,9 @@ export const ProductsPageTemplate = ({
       section3List={section3List}
       section3Features={section3Features}
       solution1={solution1}
+      solution2={solution2}
+      solution3={solution3}
+      diagram={diagram}
     />
 
     <section className="section bg-stripes"></section>
@@ -205,12 +204,15 @@ export const pageQuery = graphql`
         bakkedImg2
         bakkedImg3
         solution1
+        solution2
+        solution3
         liveResin
         sticker1
         sticker2
         sticker3
         sticker4
         sticker5
+        diagram
         featureBlock1
         featureBlock2
         footerNote1

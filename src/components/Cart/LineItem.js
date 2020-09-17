@@ -46,7 +46,7 @@ const LineItem = props => {
           </div>
           <div className="col-lg-2">
             <button
-              className=""
+              className="Button-blank"
               style={{
                 background: 'var(--secondary)',
                 color: '#ffffff'
