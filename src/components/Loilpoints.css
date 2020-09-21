@@ -10,6 +10,16 @@
   padding: 1rem;
   max-width: 25%;
 }
+.text-success {
+  color: green;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+.text-danger {
+  color: red;
+  font-weight: 700;
+  text-transform: uppercase;
+}
 @media (max-width: 600px) {
   .Loilpoints {
     padding: 0;

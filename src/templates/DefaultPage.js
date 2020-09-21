@@ -1,29 +1,35 @@
 import React from 'react'
 import { graphql } from 'gatsby'
 
-import PageHeader from '../components/PageHeader'
-import Content from '../components/Content'
+import StripesMarquee from '../components/StripesMarquee'
+import InstagramSection from '../components/InstagramSection'
 import Layout from '../components/Layout'
+import Content from '../components/Content'
 
 // Export Template for use in CMS preview
 export const DefaultPageTemplate = ({
   title,
   subtitle,
   featuredImage,
-  body,
+  body
 }) => (
-  <main className="DefaultPage">
-    <PageHeader
-      title={title}
-      subtitle={subtitle}
-      backgroundImage={featuredImage}
-    />
-
-    <section className="section">
+  <main className="DefaultPage section bg-dusty">
+    <section className="section thick bg-dusty">
       <div className="container">
-        <Content source={body} />
+        <div className="col-lg-10 mx-auto text-center">
+          <h2>{title}</h2>
+          <p>{subtitle}</p>
+        </div>
+      </div>
+      <div className="container text-center">
+        <div className="col-lg-8 mx-auto">
+          <Content source={body} />
+        </div>
       </div>
     </section>
+    <StripesMarquee />
+
+    <InstagramSection />
   </main>
 )
 
@@ -46,6 +52,7 @@ export const pageQuery = graphql`
         title
         subtitle
         featuredImage
+        img1
       }
     }
   }

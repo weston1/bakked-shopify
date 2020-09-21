@@ -11,7 +11,7 @@ const ExtractTypes = ({
   highTerpExtract,
   highTerpSticker,
   highTerpTitle,
-  className = ''
+  className = '',
 }) => {
   return (
     <section className="ExtractTypes bg-dusty">

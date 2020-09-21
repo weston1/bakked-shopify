@@ -10,11 +10,11 @@ video: '../images/bg/bakked_outro_3.mp4'
 videoLogo: '../images/bg/bakked_outro_3.mp4'
 videoPoster: '../images/bg/bakked_poster.gif'
 videoTitle:
-sticker1: '../images/photos/stickers/arrow.png'
-sticker2: '../images/photos/stickers/precious-cargo.jpg'
-sticker3: '../images/photos/stickers/caution-sticker.jpg'
+sticker1: '../images/photos/stickers/dab-testing-ahead.png'
+sticker2: '../images/photos/stickers/fully-activated-high-thc-cannabis.png'
+sticker3: '../images/photos/stickers/dabs-being-used-everywhere-ahead.jpg'
 sticker4: '../images/photos/stickers/arrow.png'
-sticker5: '../images/photos/stickers/precious-cargo.jpg'
+sticker5: '../images/photos/stickers/heat-resistant-metal-tip.png'
 solution1: '../images/photos/stickers/dabaratus-label.png'
 solution3: '../images/photos/dabaratus/dabaratus-new.png'
 diagram: '../images/svg/gyro-diagram.svg'
@@ -66,6 +66,7 @@ section4: >-
 
 
   The oil extract is fully activated in production so that you can feel the effects of the oil without the use of heat.
+liveResin: '../images/photos/oil.jpg'
 footerNote1: '../images/photos/the-dabaratus-cta.jpg'
 footerNote2: '../images/photos/our-oil-cta.jpg'
 partnerProduct: Gyro

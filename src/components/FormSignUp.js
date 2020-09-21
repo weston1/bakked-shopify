@@ -5,7 +5,7 @@ import './Form.css'
 export default ({
   name = 'Form Sign Up',
   subject = '', // optional subject of the notification email
-  action = ''
+  action = '',
 }) => (
   <section className="section thick">
     <div className="container">

@@ -7,7 +7,7 @@ import '../../components/globalStyles.scss'
 
 const Cart = () => {
   const {
-    store: { checkout }
+    store: { checkout },
   } = useContext(StoreContext)
 
   const handleCheckout = () => {

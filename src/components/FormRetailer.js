@@ -18,7 +18,7 @@ const FormRetailer = () => {
     dispensary: '',
     preferredContact: '',
     location: '',
-    info: ''
+    info: '',
   })
 
   return (

@@ -14,7 +14,6 @@ import SolutionSection from '../components/SolutionSection'
 import FindSection from '../components/FindSection'
 import FooterNote from '../components/FooterNote'
 import BackgroundVideo from '../components/BackgroundVideo'
-import { ShoppingCart } from 'react-feather'
 
 // Export Template for use in CMS preview
 export const ProductsPageTemplate = ({
@@ -58,8 +57,8 @@ export const ProductsPageTemplate = ({
       </BackgroundVideo>
     </section>
 
-    <section className="section Product--Main thick bg-dusty">
-      <div className="container">
+    <section className="section  thick bg-dusty">
+      <div className="container Product--Main">
         <div className="row">
           {/* Desktop */}
           <div className="col-lg-6 d-none d-md-block d-lg-block">

@@ -16,7 +16,7 @@ export default () => (
     declineButtonClasses="Button buttonClasses-0 buttonClasses-2 mx-auto"
     cookieName="openCookie"
     style={{
-      fontFamily: 'var(--font-primary)'
+      fontFamily: 'var(--font-primary)',
     }}
   >
     <Fade>

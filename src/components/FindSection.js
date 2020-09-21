@@ -24,7 +24,7 @@ const FindSection = ({ title, className = '' }) => {
 }
 
 FindSection.propTypes = {
-  title: PropTypes.string
+  title: PropTypes.string,
 }
 
 export default FindSection

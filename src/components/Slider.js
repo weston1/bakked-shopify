@@ -14,7 +14,7 @@ export default props => {
     slideChanged(s) {
       setCurrentSlide(s.details().relativeSlide)
     },
-    loop: true
+    loop: true,
   })
 
   React.useEffect(() => {

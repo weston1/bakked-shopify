@@ -11,7 +11,7 @@ const FindHeader = ({
   subtitle,
   backgroundImage,
   large,
-  className = ''
+  className = '',
 }) => {
   if (large) className += ' FindHeader-large'
   return (
@@ -48,7 +48,7 @@ const FindHeader = ({
 
 FindHeader.propTypes = {
   title: PropTypes.string,
-  subtitle: PropTypes.string
+  subtitle: PropTypes.string,
 }
 
 export default FindHeader

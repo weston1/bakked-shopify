@@ -59,7 +59,7 @@ export class Navigation extends Component {
             </NavLink>
           </div>
           <Link to="/find/" className="Button--locator my-auto">
-            <FiMapPin size="20px" />
+            <FiMapPin className="Button--locator--icon" />
             <span className="d-none d-md-block d-lg-block">
               &nbsp;STORE LOCATOR
             </span>

@@ -13,7 +13,7 @@ export const BakkedDefaultTemplate = ({
   subtitle,
   featuredImage,
   img1,
-  body
+  body,
 }) => (
   <main className="BakkedDefault section bg-dusty">
     <section className="section thick bg-dusty">

@@ -6,7 +6,7 @@ const LineItem = props => {
   const { line_item } = props
   const {
     removeLineItem,
-    store: { client, checkout }
+    store: { client, checkout },
   } = useContext(StoreContext)
 
   const variantImage = line_item.variant.image ? (
@@ -49,7 +49,7 @@ const LineItem = props => {
               className="Button-blank"
               style={{
                 background: 'var(--secondary)',
-                color: '#ffffff'
+                color: '#ffffff',
               }}
               onClick={handleRemove}
             >

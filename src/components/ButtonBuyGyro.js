@@ -1,12 +1,13 @@
 import React from 'react'
 import { Link } from 'gatsby'
 import { FiShoppingCart } from 'react-icons/fi'
+import './ButtonDispensary.css'
 
-const ButtonBuyGyro = ({ title, buttonBuyGyro }) => {
+const ButtonBuyGyro = ({ title }) => {
   return (
-    <Link to="/cart/" alt="Buy Bakked Gyro" className="Button ButtonBuyGyro">
-      <FiShoppingCart size="2rem" className="mb-auto" />
-      &nbsp; Buy An Empty {title}
+    <Link to="/cart/" alt="Buy Bakked Gyro" className="Button ButtonDispensary">
+      <FiShoppingCart className="ButtonDispensary--Icon" />
+      &nbsp; &nbsp; Buy An Empty {title}
     </Link>
   )
 }

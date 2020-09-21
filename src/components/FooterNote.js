@@ -54,7 +54,7 @@ const FooterNote = ({ title, footerNote1, footerNote2, partnerProduct }) => {
 FooterNote.propTypes = {
   title: PropTypes.string,
   footerNote1: PropTypes.string,
-  footerNote2: PropTypes.string
+  footerNote2: PropTypes.string,
 }
 
 export default FooterNote

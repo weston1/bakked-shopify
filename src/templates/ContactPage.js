@@ -16,7 +16,7 @@ export const ContactPageTemplate = ({
   subtitle,
   featuredImage,
   accordion,
-  section1
+  section1,
 }) => (
   <main className="Contact">
     <ContactHeader

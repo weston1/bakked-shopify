@@ -1,5 +1,9 @@
 .SolutionSection {
 }
+.Solution--Title {
+  display: inline-flex;
+  padding: 0 0 4rem 0;
+}
 .breaker {
   height: 2px;
   width: 100%;
@@ -8,6 +12,10 @@
 }
 .small-text {
   font-family: var(--font-secondary);
+  font-weight: 800;
+  text-transform: uppercase;
+  font-size: 12px;
+  line-height: 0.5rem;
 }
 .Solution-Barcode {
   transform: rotate(90deg);
@@ -50,7 +58,7 @@
   font-family: var(--font-secondary);
 }
 .Solution--Feature--List li {
-  line-height: 2;
+  line-height: 3;
   border-bottom: solid 2px #000;
   width: 100%;
   display: inline-flex;
@@ -58,8 +66,8 @@
   &:before {
     content: '';
     display: inline-block;
-    height: 3em;
-    width: 3em;
+    height: 2em;
+    width: 2em;
     background-image: url('../../static/images/svg/check-approved.svg'); // Fallback PNG
     background-image: url('../../static/images/svg/check-approved.svg');
     background-size: contain;

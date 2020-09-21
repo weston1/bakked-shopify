@@ -233,15 +233,25 @@
   text-decoration: none;
   font-family: var(--font-secondary);
   font-weight: 700;
-  letter-spacing: 0.1em;
+  letter-spacing: 0.2em;
   font-size: 22px;
   letter-spacing: -0.74px;
   text-align: right;
   padding: 2.5rem;
   height: 3rem;
   border: none;
-  transition: all 0.2s ease;
+  transition: ease-in-out all 0.3s;
   box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.11);
+}
+.Button--locator--icon {
+  position: relative;
+  top: 8px;
+  left: 15px;
+  height: 50%;
+  transform: translate(-50%, -50%);
+  width: 20px;
+  height: 20px;
+  display: block;
 }
 .Button--locator:hover {
   background: var(--secondary);

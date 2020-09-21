@@ -5,7 +5,7 @@ import './FormMini.css'
 export default ({
   name = 'Form Mini',
   subject = '', // optional subject of the notification email
-  action = ''
+  action = '',
 }) => (
   <form
     className="FormMini"

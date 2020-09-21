@@ -26,7 +26,7 @@ const StickerBreaker = ({ sticker1, sticker2 }) => {
 }
 StickerBreaker.propTypes = {
   sticker1: PropTypes.string,
-  sticker2: PropTypes.string
+  sticker2: PropTypes.string,
 }
 
 export default StickerBreaker

@@ -10,14 +10,14 @@ const ProductForm = ({ product }) => {
     options,
     variants,
     variants: [initialVariant],
-    priceRange: { minVariantPrice }
+    priceRange: { minVariantPrice },
   } = product
   const [variant, setVariant] = useState({ ...initialVariant })
   const [quantity, setQuantity] = useState(1)
   const {
     addVariantToCart,
     //store: { client, adding, checkout },
-    store: { client, adding }
+    store: { client, adding },
   } = useContext(StoreContext)
 
   const productVariant =
@@ -54,7 +54,7 @@ const ProductForm = ({ product }) => {
 
     currentOptions[optionIndex] = {
       ...currentOptions[optionIndex],
-      value
+      value,
     }
 
     const selectedVariant = find(variants, ({ selectedOptions }) =>
@@ -86,9 +86,9 @@ const ProductForm = ({ product }) => {
       selectedOptions: [
         {
           name: name,
-          value: value
-        }
-      ]
+          value: value,
+        },
+      ],
     })
     if (match === undefined) return true
     if (match.availableForSale === true) return false
@@ -98,13 +98,13 @@ const ProductForm = ({ product }) => {
   const price = Intl.NumberFormat(undefined, {
     currency: minVariantPrice.currencyCode,
     minimumFractionDigits: 2,
-    style: 'currency'
+    style: 'currency',
   }).format(variant.price)
 
   const compareAtPrice = Intl.NumberFormat(undefined, {
     currency: minVariantPrice.currencyCode,
     minimumFractionDigits: 2,
-    style: 'currency'
+    style: 'currency',
   }).format(variant.compareAtPrice)
 
   return (
@@ -177,14 +177,14 @@ ProductForm.propTypes = {
     images: PropTypes.arrayOf(
       PropTypes.shape({
         id: PropTypes.string,
-        originalSrc: PropTypes.string
+        originalSrc: PropTypes.string,
       })
     ),
     options: PropTypes.arrayOf(
       PropTypes.shape({
         id: PropTypes.string,
         name: PropTypes.string,
-        values: PropTypes.arrayOf(PropTypes.string)
+        values: PropTypes.arrayOf(PropTypes.string),
       })
     ),
     productType: PropTypes.string,
@@ -200,13 +200,13 @@ ProductForm.propTypes = {
         selectedOptions: PropTypes.arrayOf(
           PropTypes.shape({
             name: PropTypes.string,
-            value: PropTypes.string
+            value: PropTypes.string,
           })
-        )
+        ),
       })
-    )
+    ),
   }),
-  addVariantToCart: PropTypes.func
+  addVariantToCart: PropTypes.func,
 }
 
 export default ProductForm

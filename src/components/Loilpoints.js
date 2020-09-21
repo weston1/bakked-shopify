@@ -23,7 +23,7 @@ const Loilpoints = ({ title, loilpointsImg, className = '' }) => {
                 Bakked product&nbsp;purchases.
               </p>
               <p>
-                <span className="text-success">burn</span> those points on gear,
+                <span className="text-danger">burn</span> those points on gear,
                 products &amp; experiences with loilpoints
                 cannabis&nbsp;rewards.
               </p>

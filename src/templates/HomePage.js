@@ -23,10 +23,10 @@ export const convertProductsToPostFormat = products => {
       title: service.title,
       excerpt: _.truncate(service.description, {
         length: 140,
-        omission: `…`
+        omission: `…`,
       }),
       featuredImage: service.images[0].originalSrc,
-      slug: '/product/' + service.handle
+      slug: '/product/' + service.handle,
     }
     formattedProducts.push(singleItem)
   })
@@ -56,7 +56,7 @@ export const HomePageTemplate = ({
   highTerpSticker,
   highTerpTitle,
   posts,
-  products
+  products,
 }) => (
   <main className="Home">
     <BakkedHeader
@@ -219,10 +219,10 @@ const HomePage = ({ data: { page, posts, products, projects } }) => (
       posts={posts.edges.map(post => ({
         ...post.node,
         ...post.node.frontmatter,
-        ...post.node.fields
+        ...post.node.fields,
       }))}
       products={products.edges.map(service => ({
-        ...service.node
+        ...service.node,
       }))}
     />
   </Layout>

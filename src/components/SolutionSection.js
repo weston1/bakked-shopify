@@ -21,8 +21,15 @@ const SolutionSection = ({
       <div className="container row">
         <div className="col-lg-6">
           <div className="inline py-5">
-            <AlertCircle />
-            <h2 className="text-white">SOLUTION</h2>
+            <div className="Solution--Title my-auto">
+              <img
+                src="../images/svg/text-symbol-dark.svg"
+                alt={title}
+                width="70px"
+                className="pr-4 py-4"
+              />
+              <h2 className="text-white my-auto">SOLUTION</h2>
+            </div>
             <Content source={section3} className="my-auto text-center-sm" />
             <img src={diagram} alt={title} className="img-fluid p-3" />
             <div className="Solution--Approved">

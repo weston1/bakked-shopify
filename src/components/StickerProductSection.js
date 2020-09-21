@@ -36,7 +36,7 @@ const StickerProductSection = ({ sticker1, sticker3, sticker4, sticker5 }) => {
 }
 StickerProductSection.propTypes = {
   sticker1: PropTypes.string,
-  sticker5: PropTypes.string
+  sticker5: PropTypes.string,
 }
 
 export default StickerProductSection

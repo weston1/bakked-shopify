@@ -56,7 +56,7 @@ const PosPartners = ({ title, className = '' }) => {
 }
 
 PosPartners.propTypes = {
-  title: PropTypes.string
+  title: PropTypes.string,
 }
 
 export default PosPartners

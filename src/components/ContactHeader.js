@@ -11,7 +11,7 @@ const ContactHeader = ({
   subtitle,
   backgroundImage,
   large,
-  className = ''
+  className = '',
 }) => {
   if (large) className += ' ContactHeader-large'
   return (
@@ -48,7 +48,7 @@ const ContactHeader = ({
 
 ContactHeader.propTypes = {
   title: PropTypes.string,
-  subtitle: PropTypes.string
+  subtitle: PropTypes.string,
 }
 
 export default ContactHeader

@@ -10,14 +10,14 @@
   font-style: normal;
 }
 :root {
-  --primary: #fdb000;
+  --primary: #f9b916;
   --secondary: #000;
   --lightGrey: whitesmoke;
   --midGrey: #cacaca;
   --darkGrey: #272727;
   --altColor: lime;
   --footerBg: #000;
-  --danger: #ffc10e;
+  --danger: #f9b916;
   --pageBg: #020202;
   --font-primary: 'Interstate', sans-serif;
   --font-secondary: 'DaisyWhl', serif;
@@ -1401,14 +1401,17 @@ blockquote {
   line-height: 2;
   font-family: var(--font-secondary);
   display: inline-block;
-  padding: 1.5rem;
+  padding: 1.5rem 2rem;
   margin: 2rem 0.5rem 0.2rem 0;
   border: none;
   transition: all 0.3s ease;
   cursor: pointer;
   border-radius: var(--borderRadius);
   text-align: center;
+  width: 100%;
   min-width: 200px;
+  max-width: 400px;
+
   overflow: hidden;
 }
 .Button-w {
@@ -1470,8 +1473,6 @@ blockquote {
 }
 .Button-block {
   display: inline-block;
-}
-.ButtonDispensary {
 }
 @media (max-width: 600px) {
   .Button {
@@ -1564,7 +1565,8 @@ blockquote {
 
 /* Product Page */
 .Product--Main {
-  z-index: 2;
+  z-index: 10;
+  position: relative;
   text-transform: uppercase;
 }
 .Product--Header {
@@ -1600,13 +1602,14 @@ blockquote {
   display: inline;
   position: relative;
   z-index: 10;
-  width: 40vw;
 }
 .Product--Featured {
   display: inline;
-  position: relative;
-  z-index: 10;
-  max-width: 420px;
+  position: absolute;
+  z-index: 11;
+  max-height: 90vh;
+  left: 0%;
+  overflow: hidden;
 }
 .ProductSection--Stickers {
   width: 100vw;
@@ -1643,7 +1646,7 @@ blockquote {
   display: inline;
 }
 .Product--Feature--List li {
-  line-height: 2;
+  line-height: 3;
   font-size: 22px;
   letter-spacing: -0.81px;
   border-bottom: solid 2px #000;
@@ -1653,10 +1656,10 @@ blockquote {
   &:before {
     content: '';
     display: inline-block;
-    height: 3em;
-    width: 3em;
-    background-image: url('../../static/images/svg/check-approved.svg'); // Fallback PNG
-    background-image: url('../../static/images/svg/check-approved.svg');
+    height: 1.5em;
+    width: 1.5em;
+    background-image: url('../../static/images/svg/check.svg'); // Fallback PNG
+    background-image: url('../../static/images/svg/check.svg');
     background-size: contain;
     background-repeat: no-repeat;
     margin-top: 1rem;

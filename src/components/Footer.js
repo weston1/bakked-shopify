@@ -43,11 +43,9 @@ export default () => (
                     </li>
 
                     <li>
-                      <Link to="/products/">Dabaratus</Link>
+                      <Link to="/dabaratus/">Dabaratus</Link>
                     </li>
-                    <li>
-                      <Link to="/about/">How It's Made</Link>
-                    </li>
+                    <li>How It's Made</li>
                     <li>
                       <a
                         href="https://loilpoints.com"
@@ -60,17 +58,17 @@ export default () => (
                   </div>
                   <div className="col-lg-6 col-12">
                     <li>
-                      <Link to="/about/">Find A Retailer</Link>
+                      <Link to="/retailer/">Find A Retailer</Link>
                     </li>
                     <li>
-                      <Link to="/about/">Support</Link>
+                      <Link to="/contact/">Support</Link>
                     </li>
                     <li>
-                      <Link to="/about/">FAQ</Link>
+                      <Link to="/contact/">FAQ</Link>
                     </li>
                     <li>
                       <a
-                        href="https://slangww.com"
+                        href="https://slangww.com/promise/"
                         target="_blank"
                         rel="noopener noreferrer"
                       >
@@ -99,38 +97,21 @@ export default () => (
         <div className="row">
           <div className="col-lg-6 footer-credits py-3">
             <li>
-              <Link to="/privacy">Terms &amp; Conditions</Link>
+              <Link to="/privacy/">Privacy Policy</Link>
             </li>
             <li>
-              <Link to="/privacy">Privacy Policy</Link>
+              <Link to="/privacy/">Web Accessibility</Link>
             </li>
             <li>
-              <span>© {new Date().getFullYear()} Bakked.</span>
+              <span>&copy; {new Date().getFullYear()} Bakked.</span>
             </li>
           </div>
           <div className="col-lg-6 footer-credits">
             <li>
-              <a
-                href="https://instagram.com/bakked_solutions"
-                alt="Instagram Bakked Extracts"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <Instagram />
-              </a>
+              <Instagram />
             </li>
             <li>
-              <a
-                href="https://facebook.com/bakked_solutions"
-                alt="Instagram Bakked Extracts"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <Facebook />
-              </a>
-            </li>
-            <li>
-              <Link to="/contact">
+              <Link to="/contact/">
                 <MessageCircle />
               </Link>
             </li>
