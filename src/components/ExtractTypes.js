@@ -11,7 +11,7 @@ const ExtractTypes = ({
   highTerpExtract,
   highTerpSticker,
   highTerpTitle,
-  className = '',
+  className = ''
 }) => {
   return (
     <section className="ExtractTypes bg-dusty">
@@ -61,7 +61,7 @@ const ExtractTypes = ({
         </div>
         <div className="container py-4">
           <p>TESTING IN SESSION: DIAMONDS, ROSIN &amp; LIVE BUDDER</p>
-          <Link to="/products/" className="Button mx-auto text-center">
+          <Link to="/gyro/" className="Button mx-auto text-center">
             Explore Oil Types
           </Link>
         </div>

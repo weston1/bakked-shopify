@@ -23,10 +23,10 @@ export const convertProductsToPostFormat = products => {
       title: service.title,
       excerpt: _.truncate(service.description, {
         length: 140,
-        omission: `…`,
+        omission: `…`
       }),
       featuredImage: service.images[0].originalSrc,
-      slug: '/product/' + service.handle,
+      slug: '/product/' + service.handle
     }
     formattedProducts.push(singleItem)
   })
@@ -56,7 +56,7 @@ export const HomePageTemplate = ({
   highTerpSticker,
   highTerpTitle,
   posts,
-  products,
+  products
 }) => (
   <main className="Home">
     <BakkedHeader
@@ -92,7 +92,7 @@ export const HomePageTemplate = ({
                 />
                 <Content source={sectionTwo} className="text-left py-4" />
                 <div className="Button-block col-sm-10 mx-auto">
-                  <Link to="/products/" className="Button">
+                  <Link to="/gyro/" className="Button">
                     SEE WHY WE MADE IT
                   </Link>
                   <ButtonDispensary />
@@ -127,7 +127,7 @@ export const HomePageTemplate = ({
                   className="img-fluid mx-auto py-4 text-center"
                 />
                 <Content source={section3} className="text-left py-4" />
-                <Link to="/products/" className="Button">
+                <Link to="/dabaratus/" className="Button">
                   SEE WHY WE MADE IT
                 </Link>
               </Fade>
@@ -147,7 +147,7 @@ export const HomePageTemplate = ({
                   className="img-fluid mx-auto py-4 text-center"
                 />
                 <Content source={section3} className="text-left py-4" />
-                <Link to="/products/" className="Button">
+                <Link to="/dabaratus/" className="Button">
                   SEE WHY WE MADE IT
                 </Link>
               </Fade>
@@ -219,10 +219,10 @@ const HomePage = ({ data: { page, posts, products, projects } }) => (
       posts={posts.edges.map(post => ({
         ...post.node,
         ...post.node.frontmatter,
-        ...post.node.fields,
+        ...post.node.fields
       }))}
       products={products.edges.map(service => ({
-        ...service.node,
+        ...service.node
       }))}
     />
   </Layout>
